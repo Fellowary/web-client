@@ -1,0 +1,90 @@
+#circle_description{
+    width: 500px;
+    height: 50px;
+}
+#test_text {
+    width: 700px;
+    height: 100px;
+}
+#public_key_div {
+    background-color: gray;
+}
+
+#private_key_div {
+    background-color: white;
+}
+
+#request_div {
+    background-color: gray;
+}
+
+#response_div {
+    background-color: white;
+}
+
+#server_request_div {
+    background-color: gray;
+}
+
+#server_response_div {
+    background-color: white;
+}
+
+.fingerprint {
+    font-size: .7em;
+}
+.public_key  {
+    width: 300px;
+    font-size: .7em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.public_key:hover {
+    height: auto;
+    width: auto;
+    font-size: .9em;
+    display: block;
+    white-space: normal;
+    overflow: auto;
+    text-overflow: auto;
+}
+
+.signature  {
+    width: 300px;
+    font-size: .7em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.signature:hover {
+    height: auto;
+    width: auto;
+    font-size: .9em;
+    display: block;
+    white-space: normal;
+    overflow: auto;
+    text-overflow: auto;
+}
+
+.private_key  {
+    width: 300px;
+    font-size: .7em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.private_key:hover {
+    height: auto;
+    width: auto;
+    font-size: .9em;
+    display: block;
+    white-space: normal;
+    overflow: auto;
+    text-overflow: auto;
+}
+
+.access_request_button{
+    color:steelblue;
+}

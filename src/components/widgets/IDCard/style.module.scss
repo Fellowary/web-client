@@ -1,0 +1,18 @@
+@import 'assets/styles/mixins.scss';
+
+.invite_button{
+	background-color: $fel-pink;
+	margin-right: 2px;
+	color: white;
+	i{
+		padding-right: 5px;
+	}
+}
+
+.request_vouch_button {
+	background-color: $fel-blue-pale;
+}
+
+.cancel_button{
+	line-height: 1em;
+}

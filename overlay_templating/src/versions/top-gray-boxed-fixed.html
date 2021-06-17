@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+//= head.html
+<body class="fel__layout--appMaxWidth fel__layout--grayBackground fel__layout--grayTopbar fel__layout--contentNoMaxWidth fel__layout--cardsShadow fel__layout--fixedHeader fel__menu--gray fel__menu__submenu--blue">
+  <div class="fel__initialLoading"></div>
+  <div class="fel__layout">
+    //= ../components/menu-top/template.html
+    //= ../components/sidebar/template.html
+    //= ../components/chat/template.html
+    <div class="fel__layout">
+      <div class="fel__layout__header">
+        <div class="fel__utils__header">
+          //= ../components/topbar/template.html
+          //= ../components/subbar/template.html
+        </div>
+      </div>
+      <div class="fel__layout__content">
+        <div class="fel__utils__content">
+          <%= contents %>
+        </div>
+      </div>
+      <div class="fel__layout__footer">
+        //= ../components/footer/template.html
+      </div>
+    </div>
+  </div>
+</body>
+</html>

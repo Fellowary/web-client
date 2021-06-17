@@ -1,0 +1,51 @@
+<div class="font-weight-bold text-dark font-size-24">
+  +90%
+</div>
+<div>Sales Rise</div>
+<div class="fel__c4-1__chart height-200"></div>
+
+<script>
+  /////////////////////////////////////////////////////////////////////////////////////////
+  // "widgets charts" module scripts
+
+  ;(function($) {
+    'use strict'
+    $(function() {
+      /////////////////////////////////////////////////////////////////////////////////////////
+      new Chartist.Line(
+        '.fel__c4-1__chart',
+        {
+          series: [
+            {
+              className: 'ct-series-b',
+              data: [1, 5, 2, 5, 4, 7],
+            },
+          ],
+        },
+        {
+          chartPadding: {
+            right: 0,
+            left: 0,
+            top: 5,
+            bottom: 5,
+          },
+          fullWidth: true,
+          showPoint: false,
+          lineSmooth: true,
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          showArea: false,
+        },
+      )
+      /////////////////////////////////////////////////////////////////////////////////////////
+    })
+  })(jQuery)
+</script>

@@ -1,0 +1,40 @@
+@import 'assets/styles/mixins.scss';
+
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: rem(20);
+
+  &:last-child {
+    margin-bottom: 0;
+
+    .itemSeparator {
+      &::before {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.itemTime {
+  line-height: 1;
+  font-size: rem(18);
+  font-weight: 700;
+}
+
+.itemSeparator {
+  flex-shrink: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: rem(4);
+    top: rem(24);
+    left: rem(6);
+    bottom: rem(-14);
+    background-color: $gray-2;
+    border-radius: 2px;
+  }
+}

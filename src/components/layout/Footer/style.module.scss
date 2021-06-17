@@ -1,0 +1,52 @@
+@import 'assets/styles/mixins.scss';
+
+.footer {
+  max-width: rem(1280);
+  margin: 0 auto;
+  font-size: rem(14);
+  padding: 0 rem(30);
+  color: $text;
+
+  @media (max-width: $sm-max-width) {
+    padding: 0 rem(16) !important;
+  }
+}
+
+.footerFullWidth {
+  max-width: none;
+}
+
+.inner {
+  border-top: 1px solid $border;
+  padding: rem(30) 0;
+}
+
+.logo {
+  padding: rem(15) rem(20);
+  line-height: 1;
+  height: rem(33);
+  float: right;
+  @media (max-width: $sm-max-width) {
+    float: none;
+  }
+
+  img {
+    float: left;
+    margin-top: rem(5);
+  }
+}
+
+.logoName {
+  font-weight: 900;
+  color: $black;
+  font-size: 21px;
+  margin-left: rem(40);
+}
+
+.logoDescr {
+  color: $gray-4;
+  margin-left: rem(40);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

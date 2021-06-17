@@ -1,0 +1,596 @@
+/* MENU TOP */
+.fel__menuTop {
+    background: #161537;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .fel__menuTop {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: visible;
+        -webkit-box-flex: 0;
+                flex: 0 0 240px;
+        max-width: 240px;
+        min-width: 240px;
+        width: 240px;
+        margin-left: -240px;
+        -webkit-transition: -webkit-transform 0.2s ease-in-out;
+        transition: -webkit-transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    }
+    .fel__menuTop__mobileToggleButton {
+        display: block !important;
+    }
+    .fel__menu--mobileToggled .fel__menuTop {
+        -webkit-transform: translateX(240px);
+                transform: translateX(240px);
+    }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+    .fel__menuTop__outer {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        height: 100%;
+        -webkit-box-flex: 0;
+                flex: 0 0 240px;
+        max-width: 240px;
+        min-width: 240px;
+        width: 240px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+}
+
+.fel__menuTop__outer {
+    position: static;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+}
+
+@media (max-width: 767px) {
+    .fel__menuTop__outer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+}
+
+.fel__menuTop__container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .fel__menuTop__container {
+        overflow: auto;
+        padding-top: 0;
+        padding-bottom: 1.33rem;
+    }
+}
+
+.fel__menuTop__backdrop {
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #161537;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .fel__menu--mobileToggled .fel__menuTop__backdrop {
+        opacity: 0.2;
+        visibility: visible;
+    }
+}
+
+.fel__menuTop__mobileToggleButton {
+    position: absolute;
+    right: -2.67rem;
+    top: 9.46rem;
+    width: 2.66rem;
+    height: 2.66rem;
+    background: #161537;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.11), 0 0 21px 0 rgba(22, 21, 55, 0.05);
+}
+
+.fel__menuTop__mobileToggleButton span {
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+    position: relative;
+    background: #fff;
+    -webkit-transition: background 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transition: background 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    top: 5px;
+}
+
+.fel__menu--mobileToggled .fel__menuTop__mobileToggleButton span {
+    background: transparent;
+}
+
+.fel__menu--mobileToggled .fel__menuTop__mobileToggleButton span:before {
+    -webkit-transform: translateY(5px) rotate(45deg);
+            transform: translateY(5px) rotate(45deg);
+}
+
+.fel__menu--mobileToggled .fel__menuTop__mobileToggleButton span:after {
+    -webkit-transform: translateY(-5px) rotate(-45deg);
+            transform: translateY(-5px) rotate(-45deg);
+}
+
+.fel__menuTop__mobileToggleButton span:before, .fel__menuTop__mobileToggleButton span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.fel__menuTop__mobileToggleButton span:before {
+    top: -5px;
+}
+
+.fel__menuTop__mobileToggleButton span:after {
+    top: 5px;
+}
+
+.fel__menuTop__logo {
+    display: block;
+    padding: 1rem 1.33rem;
+    line-height: 1;
+    height: 4.26rem;
+    min-width: 13.33rem;
+}
+
+.fel__menuTop__logo img {
+    float: left;
+    margin-top: 0.33rem;
+}
+
+.fel__menuTop__logo__name {
+    font-weight: 900;
+    color: #fff;
+    font-size: 21px;
+    margin-left: 2.66rem;
+}
+
+.fel__menuTop__logo__descr {
+    color: #c3bedc;
+    margin-left: 2.66rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fel__menuTop__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.fel__menuTop__list .fel__menuTop__list .fel__menuTop__link {
+    padding-left: 3.26rem;
+}
+
+@media (min-width: 768px) {
+    .fel__menuTop__list {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fel__menuTop__list .fel__menuTop__list {
+        display: none !important;
+    }
+}
+
+.fel__menuTop__item .badge {
+    margin-left: 0.66rem;
+}
+
+.fel__menuTop__item--active > .fel__menuTop__link {
+    background: #1b55e3;
+    color: #fff;
+}
+
+.fel__menuTop__item--active > .fel__menuTop__link .fel__menuTop__icon {
+    color: #fff;
+}
+
+.fel__menuTop__submenu > .fel__menuTop__link {
+    position: relative;
+}
+
+.fel__menuTop__submenu > .fel__menuTop__link:before, .fel__menuTop__submenu > .fel__menuTop__link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.33rem;
+    right: 1.33rem;
+    width: 6px;
+    height: 2px;
+    background: #786fa4;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.fel__menuTop__submenu > .fel__menuTop__link:after {
+    right: 1.6rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+    .fel__menuTop__submenu > .fel__menuTop__link {
+        padding: 0.4rem 2.33rem 0.33rem 1rem;
+    }
+    .fel__menuTop__submenu > .fel__menuTop__link:before, .fel__menuTop__submenu > .fel__menuTop__link:after {
+        top: 1.2rem;
+        right: 1rem;
+    }
+    .fel__menuTop__submenu > .fel__menuTop__link:after {
+        right: 1.26rem;
+    }
+}
+
+.fel__menuTop__submenu--active {
+    background: #100f28;
+}
+
+@media (min-width: 768px) {
+    .fel__menuTop__submenu--active {
+        border-radius: 3px;
+    }
+}
+
+.fel__menuTop__submenu--active > .fel__menuTop__link {
+    color: #fff;
+}
+
+.fel__menuTop__submenu--active > .fel__menuTop__link:before, .fel__menuTop__submenu--active > .fel__menuTop__link:after {
+    background: #fff;
+}
+
+.fel__menuTop__submenu--active > .fel__menuTop__link .fel__menuTop__icon {
+    color: #fff;
+}
+
+.fel__menuTop__submenu .fel__menuTop__list {
+    display: none;
+    padding-bottom: 0.66rem;
+}
+
+.fel__menuTop__link {
+    color: #aca6cc;
+    display: block;
+    padding: 0.6rem 2.66rem 0.6rem 1.33rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .fel__menuTop__link {
+        padding: 0.4rem 1.33rem 0.33rem 1rem;
+        border-radius: 3px;
+    }
+}
+
+.fel__menuTop__link:hover, .fel__menuTop__link:focus {
+    color: #fff;
+}
+
+.fel__menuTop__link:hover:before, .fel__menuTop__link:hover:after, .fel__menuTop__link:focus:before, .fel__menuTop__link:focus:after {
+    background: #fff;
+}
+
+.fel__menuTop__icon {
+    display: inline-block;
+    width: 1.66rem;
+}
+
+@media (min-width: 768px) {
+    .fel__menu--nomenu .fel__menuTop {
+        display: none !important;
+    }
+}
+
+.fel__menu--shadow .fel__menuTop {
+    box-shadow: 0 0 100px -30px rgba(57, 55, 73, 0.3);
+}
+
+.fel__menu--blue .fel__menuTop {
+    background: #1b55e3;
+}
+
+.fel__menu--blue .fel__menuTop__link {
+    color: #e4e9f0;
+}
+
+.fel__menu--blue .fel__menuTop__link:hover {
+    color: #fff;
+}
+
+.fel__menu--blue .fel__menuTop__link:hover:before, .fel__menu--blue .fel__menuTop__link:hover:after {
+    background: #fff !important;
+}
+
+.fel__menu--blue .fel__menuTop__submenu--active {
+    background: #184ccc;
+}
+
+.fel__menu--blue .fel__menuTop__submenu--active > .fel__menuTop__link {
+    color: #fff;
+}
+
+.fel__menu--blue .fel__menuTop__submenu--active > .fel__menuTop__link:before, .fel__menu--blue .fel__menuTop__submenu--active > .fel__menuTop__link:after {
+    background: #fff !important;
+}
+
+.fel__menu--blue .fel__menuTop__submenu > .fel__menuTop__link:before, .fel__menu--blue .fel__menuTop__submenu > .fel__menuTop__link:after {
+    background: #aca6cc;
+}
+
+.fel__menu--gray .fel__menuTop {
+    background: #f2f4f8;
+}
+
+.fel__menu--gray .fel__menuTop__link {
+    color: #786fa4;
+}
+
+.fel__menu--gray .fel__menuTop__link:hover {
+    color: #fff;
+    background: #1b55e3;
+}
+
+.fel__menu--gray .fel__menuTop__link:hover:before, .fel__menu--gray .fel__menuTop__link:hover:after {
+    background: #fff !important;
+}
+
+.fel__menu--gray .fel__menuTop__item--active .fel__menuTop__link {
+    color: #fff;
+}
+
+.fel__menu--gray .fel__menuTop__submenu--active {
+    background: #e4e9f0;
+}
+
+.fel__menu--gray .fel__menuTop__submenu--active > .fel__menuTop__link .fel__menuTop__icon {
+    color: #786fa4;
+}
+
+.fel__menu--gray .fel__menuTop__submenu--active > .fel__menuTop__link:hover .fel__menuTop__icon {
+    color: #fff;
+}
+
+.fel__menu--gray .fel__menuTop__submenu > .fel__menuTop__link:before, .fel__menu--gray .fel__menuTop__submenu > .fel__menuTop__link:after {
+    background: #aca6cc;
+}
+
+.fel__menu--gray .fel__menuTop__logo__name {
+    color: #161537;
+}
+
+.fel__menu--white .fel__menuTop {
+    background: #fff;
+}
+
+.fel__menu--white .fel__menuTop__link {
+    color: #786fa4;
+}
+
+.fel__menu--white .fel__menuTop__link:hover {
+    color: #fff;
+    background: #1b55e3;
+}
+
+.fel__menu--white .fel__menuTop__link:hover:before, .fel__menu--white .fel__menuTop__link:hover:after {
+    background: #fff !important;
+}
+
+.fel__menu--white .fel__menuTop__item--active .fel__menuTop__link {
+    color: #fff;
+}
+
+.fel__menu--white .fel__menuTop__submenu--active {
+    background: #f2f4f8;
+}
+
+.fel__menu--white .fel__menuTop__submenu--active > .fel__menuTop__link .fel__menuTop__icon {
+    color: #786fa4;
+}
+
+.fel__menu--white .fel__menuTop__submenu--active > .fel__menuTop__link:hover .fel__menuTop__icon {
+    color: #fff;
+}
+
+.fel__menu--white .fel__menuTop__submenu > .fel__menuTop__link:before, .fel__menu--white .fel__menuTop__submenu > .fel__menuTop__link:after {
+    background: #aca6cc;
+}
+
+.fel__menu--white .fel__menuTop__logo__name {
+    color: #161537;
+}
+
+@media (min-width: 768px) {
+    body:not(.fel__menu--toggled) .fel__menuTop__submenu--active {
+        background: #1b55e3;
+    }
+    body:not(.fel__menu--toggled) .fel__menuTop__submenu--active > .fel__menuTop__link {
+        color: #fff;
+    }
+    body:not(.fel__menu--toggled) .fel__menuTop__submenu--active > .fel__menuTop__link .fel__menuTop__icon {
+        color: #fff;
+    }
+    .fel__menuTop__link:hover {
+        background: #1b55e3;
+    }
+    .fel__menu__submenu--black .fel__menuTop__link:hover {
+        background: #161537;
+    }
+    .fel__menu__submenu--gray .fel__menuTop__link:hover {
+        background: #f2f4f8;
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--gray .fel__menuTop__link:hover:before, .fel__menu__submenu--gray .fel__menuTop__link:hover:after {
+        background: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuTop__link:hover {
+        background: #fff;
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuTop__link:hover:before, .fel__menu__submenu--white .fel__menuTop__link:hover:after {
+        background: #1b55e3;
+    }
+}
+
+.fel__menuFlyout {
+    position: fixed;
+    z-index: 3000;
+    top: 100px;
+    left: 300px;
+    box-shadow: 0 0 40px -10px rgba(22, 21, 55, 0.4);
+    background: #1b55e3;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+
+.fel__menuFlyout--animation {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.fel__menuFlyout .fel__menuTop__list {
+    max-width: 24rem;
+    display: block !important;
+    height: auto !important;
+}
+
+.fel__menuFlyout .fel__menuTop__item {
+    float: left;
+    width: 12rem;
+    border-left: 1px solid rgba(242, 244, 248, 0.1);
+    border-bottom: 1px solid rgba(242, 244, 248, 0.1);
+}
+
+.fel__menuFlyout .fel__menuTop__item:nth-child(2n + 1) {
+    border-left: none;
+}
+
+.fel__menuFlyout .fel__menuTop__item--active .fel__menuTop__link {
+    background: rgba(242, 244, 248, 0.1);
+}
+
+.fel__menuFlyout .fel__menuTop__link {
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.fel__menuFlyout .fel__menuTop__link:hover {
+    background: rgba(242, 244, 248, 0.1);
+}
+
+.fel__menuFlyout .fel__menuTop__link > span {
+    display: block !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .fel__menu__submenu--black .fel__menuFlyout {
+        background: #161537;
+    }
+    .fel__menu__submenu--white .fel__menuTop__link:hover {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuTop__link:hover:before, .fel__menu__submenu--white .fel__menuTop__link:hover:after {
+        background: #1b55e3 !important;
+    }
+    .fel__menu__submenu--white .fel__menuTop__link:hover .fel__menuTop__icon {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuTop__submenu--active > .fel__menuTop__link:hover {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuTop__submenu--active > .fel__menuTop__link:hover .fel__menuTop__icon {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuFlyout {
+        background: #fff;
+        box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.11), 0 0 21px 0 rgba(22, 21, 55, 0.05);
+    }
+    .fel__menu__submenu--white .fel__menuFlyout .fel__menuTop__item {
+        border-left: 1px solid #f2f4f8;
+        border-bottom: 1px solid #f2f4f8;
+    }
+    .fel__menu__submenu--white .fel__menuFlyout .fel__menuTop__link {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--white .fel__menuFlyout .fel__menuTop__link:hover {
+        color: #1644b5;
+        background: rgba(221, 226, 236, 0.3);
+    }
+    .fel__menu__submenu--white .fel__menuFlyout .fel__menuTop__link:hover--active .fel__menuTop__link {
+        background: rgba(221, 226, 236, 0.3);
+    }
+    .fel__menu__submenu--gray .fel__menuTop__link:hover:before, .fel__menu__submenu--gray .fel__menuTop__link:hover:after {
+        background: #1b55e3 !important;
+    }
+    .fel__menu__submenu--gray .fel__menuTop__submenu--active > .fel__menuTop__link:hover {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--gray .fel__menuTop__submenu--active > .fel__menuTop__link:hover .fel__menuTop__icon {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--gray .fel__menuFlyout {
+        background: #f2f4f8;
+        box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.11), 0 0 21px 0 rgba(22, 21, 55, 0.05);
+    }
+    .fel__menu__submenu--gray .fel__menuFlyout .fel__menuTop__item {
+        border-left: 1px solid #e5e9f1;
+        border-bottom: 1px solid #e5e9f1;
+    }
+    .fel__menu__submenu--gray .fel__menuFlyout .fel__menuTop__item--active .fel__menuTop__link {
+        background: rgba(221, 226, 236, 0.3);
+    }
+    .fel__menu__submenu--gray .fel__menuFlyout .fel__menuTop__link {
+        color: #1b55e3;
+    }
+    .fel__menu__submenu--gray .fel__menuFlyout .fel__menuTop__link:hover {
+        color: #1644b5;
+        background: rgba(221, 226, 236, 0.3);
+    }
+}

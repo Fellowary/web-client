@@ -1,0 +1,50 @@
+/* ECOMMERCE */
+.fel__ecommerce__productImage, .fel__ecommerce__productMainImage {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.fel__ecommerce__productImage img, .fel__ecommerce__productMainImage img {
+    margin: auto;
+    max-height: 100%;
+    width: auto;
+}
+
+.fel__ecommerce__productFavorite {
+    position: absolute;
+    top: 1.33rem;
+    left: 1.66rem;
+    color: #dde2ec;
+}
+
+.fel__ecommerce__productMark {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fb434a;
+    text-align: center;
+    color: #fff;
+    top: -50px;
+    right: -50px;
+    line-height: 163px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    text-transform: uppercase;
+}
+
+.fel__ecommerce__productThumb {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fel__ecommerce__productThumb img {
+    margin: auto;
+    max-height: 100%;
+    width: auto;
+}

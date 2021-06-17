@@ -1,0 +1,28 @@
+/* GITHUB */
+.fel__github__discuss__commentEditor {
+    background-color: red;
+}
+
+.fel__github__discuss__commentEditor .note-editor {
+    border: none;
+}
+
+.fel__github__discuss__commentEditor .note-editor.note-frame .note-editing-area .note-editable {
+    padding: 1rem;
+}
+
+.fel__github__discuss__commentEditor .note-style .dropdown-menu.dropdown-style {
+    min-width: 160px;
+}
+
+.fel__github__discuss__commentEditor .note-style pre {
+    padding: 0.33rem;
+}
+
+.fel__github__discuss__commentEditor .note-style p {
+    margin: 0;
+}
+
+.fel__github__discuss__commentEditor .note-color .btn-group {
+    display: inline-block;
+}

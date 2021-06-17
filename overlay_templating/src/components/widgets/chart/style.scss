@@ -1,0 +1,73 @@
+@import '../../core/css/mixins';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* WIDGET CHART */
+
+.air {
+  &__c1 {
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+
+  &__c5__chart {
+    .ct-bar {
+      stroke-width: 15px;
+    }
+  }
+
+  &__c6 {
+    &__progressIcon {
+      width: rem(50);
+      height: rem(50);
+      text-align: center;
+      border-radius: 5px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      i {
+        vertical-align: middle;
+        line-height: rem(50);
+      }
+    }
+  }
+
+  &__c7 {
+    &__mapContainer {
+      max-width: rem(400);
+      margin: 0 auto;
+    }
+  }
+
+  &__c8 {
+    &__chartist {
+      display: inline-block;
+      height: rem(50);
+      width: rem(110);
+    }
+  }
+
+  &__c9 {
+    &__chartTooltip {
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      @include transition-middle();
+    }
+  }
+
+  &__c10 {
+    &__chartTooltip {
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      @include transition-middle();
+    }
+  }
+}

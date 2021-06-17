@@ -1,0 +1,12 @@
+@import '../../core/css/mixins';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* PROFILE APP */
+
+.air {
+  &__profile {
+    &__info {
+      border-bottom: 1px solid $gray-2;
+    }
+  }
+}

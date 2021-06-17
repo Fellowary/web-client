@@ -1,0 +1,81 @@
+@import 'assets/styles/mixins.scss';
+
+.identityList {
+  height: 100%;
+  margin-bottom: 10px;
+  @media (max-width: $sm-max-width) {
+    max-height: 300px;
+    margin-bottom: 10px;
+  }
+  background-color: lighten($black, 3);
+  box-shadow: 0 0 5px lighten($black, 5);
+}
+
+.item {
+  padding: rem(10);
+  cursor: pointer;
+  border-radius: 5px;
+  margin: rem(5) auto rem(5) auto;
+  width: 90%;
+  background-color: $gray-1;
+  &:last-child {
+    margin-bottom: rem(10);
+  }
+
+  &:hover {
+    background-color: lighten($gray-1, 2);
+  }
+}
+
+.current {
+  background-color: lighten($fel-green, 4);
+
+  &:hover {
+    background-color: lighten($fel-green, 10);
+  }
+}
+
+.info {
+  min-width: 0;
+}
+
+
+.inviteBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $gray-1;
+}
+
+.container {
+  max-width: rem(540);
+  width: 100%;
+  box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.06), 0 0 21px 0 rgba(22, 21, 55, 0.03);
+  border-radius: 5px;
+  background-color: darken($white, 2);
+}
+
+.reject {
+  margin-top: 10px;
+}
+
+
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.rolling {
+  animation: rolling .73s cubic-bezier(.16,-0.81,.54,1.64);
+}
+

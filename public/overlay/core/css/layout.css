@@ -1,0 +1,76 @@
+/*  "LAYOUT" STYLES */
+.fel__layout {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+            flex: auto;
+    min-height: 100vh;
+    min-width: 0;
+}
+
+.fel__layout.fel__layout--hasSider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+}
+
+.fel__layout__content {
+    -webkit-box-flex: 1;
+            flex: auto;
+    min-height: 0;
+}
+
+.fel__layout__footer {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+}
+
+.fel__layout__header {
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+}
+
+.fel__layout--fixedHeader .fel__layout__header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.fel__layout--squaredBorders .card {
+    border-radius: 0 !important;
+}
+
+.fel__layout--appMaxWidth > .fel__layout {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.fel__layout--contentNoMaxWidth .fel__utils__content,
+.fel__layout--contentNoMaxWidth .fel__footer {
+    max-width: none;
+}
+
+.fel__layout--borderless .card {
+    border: none !important;
+}
+
+.fel__layout--grayBackground {
+    background: #f2f4f8;
+}
+
+.fel__layout--grayTopbar .fel__topbar,
+.fel__layout--grayTopbar .fel__subbar {
+    background: #f2f4f8;
+}
+
+.fel__layout--cardsShadow .card {
+    box-shadow: 0 4px 10px 0 rgba(22, 21, 55, 0.03), 0 0 10px 0 rgba(22, 21, 55, 0.02);
+}
+
+.fel__layout--cardsShadow .card .card {
+    box-shadow: none;
+}

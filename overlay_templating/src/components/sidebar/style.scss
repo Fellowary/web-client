@@ -1,0 +1,195 @@
+@import '../core/css/mixins';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* TOPBAR */
+
+.fel__sidebar {
+  width: rem(270);
+  position: fixed;
+  z-index: 1999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  padding: rem(23) rem(30) 0;
+  transform: translateX(270px);
+  @include transition-slow();
+
+  @media (max-width: $sm-max-width) {
+    padding: rem(23) rem(20) 0;
+  }
+
+  &--toggled & {
+    transform: translateX(0);
+    box-shadow: $shadow;
+  }
+
+  // mobile toggle button
+  &__toggleButton {
+    position: fixed;
+    z-index: 1998;
+    right: rem(40);
+    bottom: rem(100);
+
+    i {
+      position: relative;
+      bottom: -1px;
+      animation: spin 4s linear infinite;
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  &__close {
+    float: right;
+    position: relative;
+    top: 4px;
+  }
+
+  &__scroll {
+    height: calc(100% - 60px);
+    position: relative;
+    padding: 0 rem(30);
+    margin: 0 rem(-30);
+    overflow: auto;
+  }
+
+  &__type {
+    padding: rem(20) 0;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    margin: rem(40) 0 rem(30);
+
+    &__title {
+      margin: rem(-32) 0 rem(20);
+
+      span {
+        padding-right: rem(20);
+        background: $white;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(20);
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    margin-right: rem(10);
+  }
+
+  &__container {
+    margin-left: auto;
+  }
+
+  &__switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    margin-bottom: 0;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .fel__sidebar__switch__slider {
+        background-color: $blue;
+      }
+
+      &:checked + .fel__sidebar__switch__slider:before {
+        transform: translateX(26px);
+      }
+    }
+
+    &__slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $gray-3;
+      transition: 0.4s;
+      border-radius: 22px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: $white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__select {
+    &__item {
+      margin-left: rem(2);
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid transparent;
+      border-radius: 24px;
+      float: left;
+      padding: 1px;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 18px;
+      }
+
+      &--active {
+        border: 2px solid $blue;
+      }
+
+      &--white {
+        &:after {
+          border: 1px solid $gray-2;
+          background: $white;
+        }
+      }
+
+      &--gray {
+        &:after {
+          background: $gray-1;
+        }
+      }
+
+      &--blue {
+        &:after {
+          background: $blue;
+        }
+      }
+
+      &--black {
+        &:after {
+          background: $black;
+        }
+      }
+
+      &--img {
+        &:after {
+          background: linear-gradient(
+            to right,
+            rgba(240, 240, 240, 1) 0%,
+            rgba(210, 210, 220, 1) 100%
+          );
+        }
+      }
+    }
+  }
+}

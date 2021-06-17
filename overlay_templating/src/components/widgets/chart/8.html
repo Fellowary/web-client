@@ -1,0 +1,197 @@
+<div class="fel__utils__textDivider mb-2">
+  <h4 class="fel__utils__textDivider__content font-size-24 font-weight-bold">
+    Waiting actions
+  </h4>
+</div>
+<div class="table-responsive">
+  <table class="table table-borderless table-vertical-middle">
+    <tr>
+      <th style="width: 45px;"></th>
+      <th class="border-bottom-0 font-weight-normal text-gray-6 text-uppercase">Action name</th>
+      <th class="border-bottom-0 font-weight-normal text-gray-6 text-uppercase">Location</th>
+      <th class="border-bottom-0 font-weight-normal text-gray-6 text-uppercase text-right">
+        Value
+      </th>
+      <th class="border-bottom-0 font-weight-normal text-gray-6 text-uppercase text-right">
+        Last week profit
+      </th>
+    </tr>
+    <tr>
+      <td style="width: 45px;">
+        <label class="fel__utils__control fel__utils__control__checkbox mb-0">
+          <input type="checkbox" checked="checked" disabled disabled />
+          <span class="fel__utils__control__indicator"></span>
+        </label>
+      </td>
+      <td>
+        <div>New Users</div>
+        <div class="text-gray-4">Administrator</div>
+      </td>
+      <td class="text-blue">
+        New York
+      </td>
+      <td class="font-weight-bold text-right">
+        +3125
+      </td>
+      <td class="text-right">
+        <div class="fel__c8__chartist fel__c8__chartist--1"></div>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 45px;">
+        <label class="fel__utils__control fel__utils__control__checkbox mb-0">
+          <input type="checkbox" checked="checked" disabled />
+          <span class="fel__utils__control__indicator"></span>
+        </label>
+      </td>
+      <td>
+        <div>New Reports</div>
+        <div class="text-gray-4">Support</div>
+      </td>
+      <td class="text-blue">
+        Palo Alto
+      </td>
+      <td class="font-weight-bold text-right">
+        +643
+      </td>
+      <td class="text-right">
+        <div class="fel__c8__chartist fel__c8__chartist--2"></div>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 45px;">
+        <label class="fel__utils__control fel__utils__control__checkbox mb-0">
+          <input type="checkbox" checked="checked" disabled />
+          <span class="fel__utils__control__indicator"></span>
+        </label>
+      </td>
+      <td>
+        <div>Quote Submits</div>
+        <div class="text-gray-4">Developer</div>
+      </td>
+      <td class="text-blue">
+        Las Vegas
+      </td>
+      <td class="font-weight-bold text-right">
+        +982
+      </td>
+      <td class="text-right">
+        <div class="fel__c8__chartist fel__c8__chartist--3"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  /////////////////////////////////////////////////////////////////////////////////////////
+  // "widgets charts" module scripts
+
+  ;(function($) {
+    'use strict'
+    $(function() {
+      /////////////////////////////////////////////////////////////////////////////////////////
+      new Chartist.Line(
+        '.fel__c8__chartist--1',
+        {
+          series: [
+            {
+              className: 'ct-series-b',
+              data: [2, 4, 5, 4, 5, 6, 7, 5],
+            },
+          ],
+        },
+        {
+          chartPadding: {
+            right: 0,
+            left: 0,
+            top: 5,
+            bottom: 5,
+          },
+          fullWidth: true,
+          showPoint: false,
+          lineSmooth: true,
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          showArea: false,
+        },
+      )
+
+      new Chartist.Line(
+        '.fel__c8__chartist--2',
+        {
+          series: [
+            {
+              className: 'ct-series-i',
+              data: [4, 6, 4, 3, 5, 7, 8, 7],
+            },
+          ],
+        },
+        {
+          chartPadding: {
+            right: 0,
+            left: 0,
+            top: 5,
+            bottom: 5,
+          },
+          fullWidth: true,
+          showPoint: false,
+          lineSmooth: true,
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          showArea: false,
+        },
+      )
+
+      new Chartist.Line(
+        '.fel__c8__chartist--3',
+        {
+          series: [
+            {
+              className: 'ct-series-d',
+              data: [1, 5, 2, 5, 4, 7],
+            },
+          ],
+        },
+        {
+          chartPadding: {
+            right: 0,
+            left: 0,
+            top: 5,
+            bottom: 5,
+          },
+          fullWidth: true,
+          showPoint: false,
+          lineSmooth: true,
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          showArea: false,
+        },
+      )
+      /////////////////////////////////////////////////////////////////////////////////////////
+    })
+  })(jQuery)
+</script>

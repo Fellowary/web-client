@@ -1,0 +1,51 @@
+<div class="font-weight-bold text-dark font-size-24">
+  78,367
+</div>
+<div>Total Sales</div>
+<div class="fel__c4__chart height-200"></div>
+
+<script>
+  /////////////////////////////////////////////////////////////////////////////////////////
+  // "widgets charts" module scripts
+
+  ;(function($) {
+    'use strict'
+    $(function() {
+      /////////////////////////////////////////////////////////////////////////////////////////
+      new Chartist.Line(
+        '.fel__c4__chart',
+        {
+          series: [
+            {
+              className: 'ct-series-a',
+              data: [2, 4, 5, 4, 5, 6, 7, 5],
+            },
+          ],
+        },
+        {
+          chartPadding: {
+            right: 0,
+            left: 0,
+            top: 5,
+            bottom: 5,
+          },
+          fullWidth: true,
+          showPoint: false,
+          lineSmooth: true,
+          axisY: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          axisX: {
+            showGrid: false,
+            showLabel: false,
+            offset: 0,
+          },
+          showArea: false,
+        },
+      )
+      /////////////////////////////////////////////////////////////////////////////////////////
+    })
+  })(jQuery)
+</script>

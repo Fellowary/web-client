@@ -1,0 +1,117 @@
+<div class="fel__utils__heading">
+  <h5>Dashboard Crypto</h5>
+</div>
+<div class="row">
+  <div class="col-xl-8 col-lg-12">
+    <div class="card">
+      <div class="card-header card-header-flex">
+        <div class="d-flex align-items-stretch">
+          <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-bold nav-tabs-noborder nav-tabs-stretched">
+            <li class="nav-item">
+              <a class="text-uppercase nav-link" href="#tab-hour-content" data-toggle="tab" aria-selected="true"
+                id="tab-hour">Hour</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-uppercase nav-link" href="#tab-day-content" data-toggle="tab" aria-selected="false"
+                id="tab-day">Day</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-uppercase nav-link active" href="#tab-week-content" data-toggle="tab"
+                id="tab-week">Week</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-uppercase nav-link" href="#tab-month-content" data-toggle="tab" id="tab-month">Month</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tab-pane" id="tab-hour-content" role="tabpanel" aria-labelledby="tab-hour-content"></div>
+        <div class="tab-pane" id="tab-day-content" role="tabpanel" aria-labelledby="tab-day-content"></div>
+        <div class="tab-pane active" id="tab-week-content" role="tabpanel" aria-labelledby="tab-week-content">
+          <div class="fel__cryptoDashboard__weekChart position-relative height-300"></div>
+        </div>
+        <div class="tab-pane" id="tab-month-content" role="tabpanel" aria-labelledby="tab-month-content"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            //= ../../components/widgets/general/7.html
+          </div>
+        </div>
+        <div class="card">
+          //= ../../components/widgets/chart/6.html
+        </div>
+        <div class="card">
+          <div class="card-body">
+            //= ../../components/widgets/general/5.html
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            //= ../../components/widgets/list/3.html
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            //= ../../components/widgets/general/12.html
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            //= ../../components/widgets/chart/5.html
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="text-dark mb-0">Cryptocurrencies</h5>
+      </div>
+      <div class="card-body">
+        //= ../../components/widgets/list/6.html
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        //= ../../components/widgets/list/15.html
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        //= ../../components/widgets/chart/1.html
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  ; (function ($) {
+    'use strict'
+    $(function () {
+      new Chartist.Line(
+        '.fel__cryptoDashboard__weekChart',
+        {
+          labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          series: [[2, 4, 7, 25, 5, 28, 31]],
+        },
+        {
+          fullWidth: !0,
+          chartPadding: {
+            right: 15,
+            left: -15,
+          },
+          low: 0,
+          showArea: true,
+          plugins: [Chartist.plugins.tooltip()],
+        },
+      )
+    })
+  })(jQuery)
+</script>

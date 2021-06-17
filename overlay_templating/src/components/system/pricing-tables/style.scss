@@ -1,0 +1,24 @@
+@import '../../core/css/mixins';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* PRICING TABLES */
+
+.air {
+  &__pricingTable {
+    &__items {
+      &--separated {
+        overflow: hidden;
+
+        .fel__pricingTable__item {
+          margin-right: -1px;
+          border-right: 1px solid $gray-2;
+          border-radius: 0;
+        }
+      }
+    }
+
+    &__item {
+      border-radius: 5px;
+    }
+  }
+}

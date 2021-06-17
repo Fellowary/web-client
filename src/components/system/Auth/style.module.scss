@@ -1,0 +1,41 @@
+@import 'assets/styles/mixins.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.auth {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $gray-1;
+}
+
+.container {
+  max-width: rem(540);
+  width: 100%;
+  box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.06), 0 0 21px 0 rgba(22, 21, 55, 0.03);
+  border-radius: 5px;
+}
+
+.googleSign {
+  background-repeat: no-repeat;
+  background-size: rem(21) rem(21);
+  background-position: center left rem(15);
+  padding-left: rem(40);
+}
+
+.footerNav {
+  li {
+    margin: rem(5) rem(14);
+  }
+}
+
+.fellowaryLogo {
+  max-width: calc(min(90%, 500px));
+  margin: auto;
+}

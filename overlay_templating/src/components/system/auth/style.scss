@@ -1,0 +1,105 @@
+@import '../../core/css/mixins';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.air {
+  &__auth {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $gray-1;
+
+    &__container {
+      border-radius: 5px;
+      max-width: rem(540);
+      width: 100%;
+      box-shadow: 0 4px 38px 0 rgba(22, 21, 55, 0.06), 0 0 21px 0 rgba(22, 21, 55, 0.03);
+    }
+
+    &__googleSign {
+      background-image: url('../core/img/icons/google-logo.svg');
+      background-repeat: no-repeat;
+      background-size: rem(21) rem(21);
+      background-position: center left rem(15);
+      padding-left: rem(40);
+    }
+
+    &__footerNav {
+      li {
+        margin: rem(5) rem(14);
+      }
+    }
+
+    // white background
+    &--white {
+      .fel__auth {
+        background: $white;
+      }
+    }
+
+    // blue background
+    &--blue {
+      .fel__auth {
+        background: $primary;
+        .fel__network__container,
+        .fel__utils__logo__name,
+        .fel__utils__logo__descr {
+          color: $white !important;
+        }
+
+        .fel__auth__container + div {
+          color: $gray-1;
+          a {
+            color: $white !important;
+          }
+        }
+
+        .fel__auth__footerNav {
+          a {
+            color: $white !important;
+          }
+        }
+      }
+    }
+
+    // black background
+    &--black {
+      .fel__auth {
+        background: $black;
+        .fel__network__container,
+        .fel__utils__logo__name,
+        .fel__utils__logo__descr {
+          color: $white !important;
+        }
+
+        .fel__auth__container + div {
+          color: $gray-1;
+          a {
+            color: $white !important;
+          }
+        }
+
+        .fel__auth__footerNav {
+          a {
+            color: $white !important;
+          }
+        }
+      }
+    }
+
+    // with image background
+    &--img {
+      .fel__auth {
+        background-image: url('../core/img/content/jacket.jpg');
+        background-repeat: repeat;
+        background-position: center center;
+      }
+    }
+  }
+}

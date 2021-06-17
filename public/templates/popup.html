@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="popup.css" type="text/css">
+<link rel="stylesheet" href="uppy.min.css" type="text/css">
+<title>Fellowary</title>
+</head>
+
+<body>
+    <span id="appinfo"><span id="appname">&nbsp;</span> <span id="version">&nbsp;</span></span>
+    <div>Fellowary, The secure file management and collaboration network.</div>
+    <div>
+        <div id="file_upload_div"></div>
+        <button id="upload_files">Upload File</button>
+        <button id="upload_text">Upload Text</button>
+        <br>
+        <label for="user_name">Username</label>
+        <input type="text" id="user_name"  value="userguy" required minlength="4" maxlength="16" placeholder="4 to 16 characters long" />
+        <br>
+        <label for="password">Password</label>
+        <input type="text" id="password"  value="lolpassword" required minlength="8" maxlength="255" placeholder="8 to 255 characters long" />
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long" />
+        <br>
+        <label for="friend">Friend</label>
+        <input type="text" id="friend"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long" />
+        <div class="received_request_div">
+            Received Requests
+            <br>
+            <div class="inner_received"></div>
+        </div>
+        <div class="sent_request_div">
+            Sent Requests
+            <br>
+            <div class="inner_sent"></div>
+        </div>
+        <br>
+        <label for="user_fingerprint">User Fingerprint</label>
+        <input type="text" id="user_fingerprint"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long" />
+        <br>
+        <label for="circle_requester">Circle Requester Fingerprint</label>
+        <input type="text" id="circle_requester_fingerprint"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long" />
+        <br>
+        <label for="circle_name">Circle Name</label>
+        <input type="text" id="circle_name"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long" value="amazing circle"/>
+        <br>
+        <label for="circle_user_name">Circle User Name</label>
+        <input type="text" id="circle_user_name" required minlength="8" maxlength="255" placeholder="8 to 255 characters long" value="eric"/>
+        <br>
+        <label for="circle_fingerprint">Circle Fingerprint</label>
+        <input type="text" id="circle_fingerprint" required minlength="8" maxlength="255" placeholder="8 to 255 characters long"/>
+        <br>
+        <label for="circle_description">Circle Description</label>
+        <br>
+        <textarea type="textarea" id="circle_description"  required minlength="8" maxlength="255" placeholder="8 to 255 characters long">share with friends, don't do bad stuff.</textarea>
+
+        <br>
+        <label for="test_text">Test Text</label>
+        <br>
+        <textarea type="textarea" id="test_text"  placeholder="Paste inputs here."></textarea>
+    </div>
+    <div>
+        <button id="sign_up">Sign Up</button>
+        <button id="sign_in">Sign In</button>
+        <button id="create_circle">Create Circle</button>
+        <button id="get_circles">Get Circles</button>
+        <button id="sign_up_outsider">Sign Outsider Up</button>
+        <button id="get_outsider_keys">Get Outsider Keys</button>
+        <button id="request_vouch">Ask for Vouch</button>
+        <button id="check_for_vouch_request">Check For Vouch Request</button>
+        <button id="vouch_for_circle">Vouch for Circle</button>
+        <button id="ask_for_access">Ask to Join Circle</button>
+        <button id="check_for_access_requests">Check Access Requests</button>
+        <button id="grant_circle_access">Grant Access</button>
+        <button id="check_for_access">Check for Grants</button>
+        <button id="get_signatures">Get Signatures</button>
+        <button id="get_friend_keys">Get Friend Keys</button>
+        <button id="remove_from_circle">Remove From Circle</button>
+
+        <button id="get_link">Get Link</button>
+        <button id="search">Search</button>
+        <button id="remove_config">Remove Config</button>
+    </div>
+    <div>
+        <div id="public_key_div">
+        </div>
+        <div id="private_key_div">
+        </div>
+        <div id="request_div">
+        </div>
+        <div id="response_div">
+        </div>
+        <div id="server_request_div">
+        </div>
+        <div id="server_response_div">
+        </div>
+    <div>
+    <!--script src="torrenting.js"></script-->
+    <script src="popup.js"></script>
+</body>
+
+</html>
+

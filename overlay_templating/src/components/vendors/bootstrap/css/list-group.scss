@@ -1,0 +1,12 @@
+@import '../../../core/css/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* LIST GROUP */
+
+.list-group-item {
+  border-color: $border;
+
+  &.active {
+    background: $primary;
+  }
+}

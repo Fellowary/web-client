@@ -1,0 +1,1 @@
+!function(t){"use strict";t(function(){t(".fel__customScroll").length&&!/Mobi/.test(navigator.userAgent)&&jQuery().perfectScrollbar&&t(".fel__customScroll").perfectScrollbar({theme:"fellowary"}),t("[data-toggle=tooltip]").tooltip(),t("[data-toggle=popover]").popover()})}(jQuery);
