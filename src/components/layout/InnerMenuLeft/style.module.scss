@@ -1,0 +1,388 @@
+@import 'assets/styles/mixins.scss';
+
+.innerSideBar {
+  display: flex;
+  &__near{
+    height: 100%;
+    margin-left: 80px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.0);
+
+    &__container{
+      height: 100%;
+      width: 100%;
+      box-shadow: $shadow-2-1;
+      overflow: hidden;
+      background-color: $gray-3;
+    }
+  }
+
+  &__far{
+    height: 100%;
+    margin-left: 240px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.0);
+
+    &__container{
+      height: 100%;
+      width: 80%;
+      margin-left: 0;
+      box-shadow: $shadow-2-1;
+      overflow: hidden;
+      background-color: $gray-3;
+    }
+  }
+
+  &__hidden{
+    height: 100%;
+    box-shadow: $shadow-2-1;
+    overflow: hidden;
+    position: fixed;
+    left: -100px;
+    z-index: 999;
+    background-color: $gray-3;
+  }
+
+  &__compact{
+    height: 100%;
+    box-shadow: $shadow-2-1;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    background-color: $gray-3;
+  }
+}
+
+
+
+@keyframes vibrate {
+  0% {
+      top: 0px;
+  }
+  10% {
+    top: -3px;
+    left: -2px;
+  }
+  25% {
+    top: -5px;
+    left: 2px;
+  }
+  50% {
+    top: 0px;
+    left: -3px;
+  }
+  60% {
+    top: -2px;
+    left: 4px;
+  }
+  75% {
+    top: 5px;
+    left: -1px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.vibrate {
+  animation: vibrate .1 linear infinite;
+}
+
+.title{
+  padding-left: 10px;
+  margin-top: 10px;
+  &__collapsed{
+    margin-top: 10px;
+    visibility: hidden;
+  }
+
+}
+
+.noTransition{
+  transition: all 0.2s, margin-left 0s;
+}
+
+.opaque{
+
+}
+
+.inputBox {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.conversationInput {
+  padding-right: 5px;
+}
+
+.conversationInputVibrate {
+  padding-right: 5px;
+  position: relative;
+  border: 1px solid red;
+  animation: vibrate 0.2s linear 0s infinite;
+}
+
+.conversationIcon {
+  color: rgba(0, 0, 0, 0.25);
+  padding-left: 5px;
+}
+
+.conversationButton {
+  background-color: $primary;
+  color: $white;
+  height: auto;
+  &__hidden{
+    display: none;
+  }
+}
+
+.closeConversationButton {
+  float: left;
+  background-color: $danger;
+  color: $white;
+}
+
+
+
+.privateConversationButton {
+  background-color: $primary;
+  position: relative;
+  color: $white;
+    /*animation: vibrate 0.5s linear 0s 30;*/
+}
+
+.buttonVibrate {
+  position: relative;
+  animation: vibrate 0.2s linear 0s infinite;
+}
+
+.deleteButton:hover{
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
+}
+.publicConversationButton {
+  background-color: $info;
+  color: $white;
+}
+
+.overlayModal {
+  min-width:450px;
+  z-index: 20000;
+}
+
+@at-root{
+  .ant-modal-mask{
+    z-index: 1999 !important;
+  }
+}
+
+.ant-modal{
+  z-index: 2000 !important;
+}
+
+.dialogs {
+  height: 100%;
+  @media (max-width: $sm-max-width) {
+    max-height: rem(240);
+    margin-bottom: rem(15);
+  }
+}
+
+.item {
+  padding: rem(10);
+  cursor: pointer;
+  margin-bottom: rem(15);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: lighten($gray-1, 2);
+  }
+}
+
+.current {
+
+  background-color: $gray-1;
+  // border-radius: 20% 0% 0% 20%;
+
+  &:hover {
+    background-color: $gray-1;
+  }
+}
+
+.info {
+  min-width: 0;
+}
+
+.unread {
+  min-width: 15px;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: rem(15);
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &.answer {
+    flex-direction: row-reverse;
+
+    .messageAvatar {
+      margin-left: 0;
+      margin-right: rem(15);
+    }
+
+    .messageContent {
+      &::before {
+        left: auto;
+        right: 100%;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 4px solid $gray-1;
+        border-left: none;
+      }
+    }
+  }
+}
+
+// mobile toggle button
+.mobileToggleButton {
+  &__near{
+    position: fixed;
+    left: rem(0);
+    top: rem(230);
+    width: rem(40);
+    height: rem(40);
+    background: $fel-blue-pale;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    z-index: 4000;
+    box-shadow: $shadow-2;
+    transition: all 0.2s;
+
+    span {
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+      position: relative;
+      background: $white;
+      transition: background 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      top: 5px;
+
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $white;
+        width: 100%;
+        height: 2px;
+        transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+      &:before {
+        top: -5px;
+      }
+      &:after {
+        top: 5px;
+      }
+    }
+  }
+
+  &__far{
+    position: fixed;
+    left: 420px;
+    top: rem(230);
+    width: rem(40);
+    height: rem(40);
+    background: $fel-blue-pale;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    z-index: 4000;
+    box-shadow: $shadow-2;
+    transition: all 0.2s;
+
+    span {
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+      position: relative;
+      background: $white;
+      transition: background 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      top: 5px;
+
+     
+      background: transparent;
+      &:before {
+        transform: translateY(5px) rotate(45deg);
+      }
+      &:after {
+        transform: translateY(-5px) rotate(-45deg);
+      }
+    
+      
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $white;
+        width: 100%;
+        height: 2px;
+        transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+      &:before {
+        top: -5px;
+      }
+      &:after {
+        top: 5px;
+      }
+    }
+  }
+
+  &__hidden{
+    display: none;
+  }
+}
+
+.mobileMenuBackdrop{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: $black;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.2;
+
+  &__hidden{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: $black;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+}

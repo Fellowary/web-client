@@ -1,0 +1,106 @@
+{
+  "manifest_version": 2,
+  "name": "Fellowary",
+  "short_name": "Fellowary",
+  "author": "Fellowary Inc.",
+  "version": "1.0",
+  "icons": {
+    "16": "/images/icon_16.png",
+    "32": "/images/icon_32.png",
+    "48": "/images/icon_48.png",
+    "92": "/images/icon_92.png"
+  },
+  "applications":{
+    "gecko":{
+      "id": "jeff@fellowary.com",
+      "strict_min_version": "52.0"
+    }
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "browser_action":{
+    "browser_style": false,
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png"
+    }
+  },
+  "commands": {
+    "open-dashboard": {
+      "description": "__MSG_open-dashboard__"
+    },
+    "load-link": {
+      "description": "__MSG_load-link__"
+    },
+    "report-link": {
+      "description": "__MSG_report-link__"
+    },
+    "leave-link": {
+      "description": "__MSG_leave-link__"
+    },
+    "signup": {
+      "description": "__MSG_signup__"
+    },
+    "signin": {
+      "description": "__MSG_signin__"
+    },
+    "signout": {
+      "description": "__MSG_signout__"
+    },
+    "vouch": {
+      "description": "__MSG_vouch__"
+    },
+    "unvouch": {
+      "description": "__MSG_unvouch__"
+    },
+    "circle": {
+      "description": "__MSG_circle__"
+    },
+    "uncircle": {
+      "description": "__MSG_uncircle__"
+    },
+    "history": {
+      "description": "__MSG_history__"
+    }
+  },
+  "content_scripts":[
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "/js/frontend_handling.js"
+      ],
+      "css": [
+        "/css/overlay.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources":[
+    "/templates/*",
+    "/css/*",
+    "/js/uploads.js"
+  ],
+  "background":{
+    "persistent": true,
+    "page": "background.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "downloads",
+    "storage",
+    "unlimitedStorage",
+    "contextMenus",
+    "webRequest",
+    "webNavigation",
+    "webRequestBlocking",
+    "https://*.fellowary.com/*",
+    "https://localhost/*",
+    "<all_urls>"
+  ]
+}

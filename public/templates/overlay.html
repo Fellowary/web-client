@@ -1,0 +1,3294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>
+    Fellowary Overlay
+  </title>
+  <link href="../overlay/core/img/favicon.png" rel="shortcut icon">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900" rel="stylesheet"> -->
+
+  <!-- VENDORS -->
+  <!-- v1.0.0 -->
+  <link rel="stylesheet" type="text/css" href="../3rdparty/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/font-feathericons/dist/feather.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/font-linearicons/style.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/font-icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/c3/c3.min.css">
+  <link rel="stylesheet" type="text/css" href="/3rdparty/datatables/datatables.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="../3rdparty/tempus-dominus-bs4/build/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/ionrangeslider/css/ion.rangeSlider.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/nprogress/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/summernote/dist/summernote.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/dropify/dist/css/dropify.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/jquery-steps/demo/css/jquery.steps.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="../3rdparty/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+
+  <script src="../3rdparty/jquery/dist/jquery.min.js"></script>
+  <script src="../3rdparty/popper.js/dist/umd/popper.js"></script>
+  <script src="../3rdparty/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../3rdparty/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="../3rdparty/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <script src="../3rdparty/chartist/dist/chartist.min.js"></script>
+  <script src="../3rdparty/chart.js/dist/Chart.min.js"></script>
+  <script src="../3rdparty/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="../3rdparty/jqvmap/dist/maps/jquery.vmap.usa.js"></script>
+  <script src="../3rdparty/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+  <script src="../3rdparty/d3/d3.min.js"></script>
+  <script src="../3rdparty/d3-dsv/dist/d3-dsv.js"></script>
+  <script src="../3rdparty/d3-time-format/dist/d3-time-format.js"></script>
+  <script src="../3rdparty/c3/c3.min.js"></script>
+  <script src="../3rdparty/peity/jquery.peity.min.js"></script>
+  <script src="/3rdparty/datatables/datatables.min.js"></script>
+  <script src="../3rdparty/editable-table/mindmup-editabletable.js"></script>
+  <script src="../3rdparty/moment/min/moment.min.js"></script>
+  <script src="../3rdparty/tempus-dominus-bs4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="../3rdparty/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="../3rdparty/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../3rdparty/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="../3rdparty/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+  <script src="../3rdparty/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../3rdparty/nprogress/nprogress.js"></script>
+  <script src="../3rdparty/summernote/dist/summernote.min.js"></script>
+  <script src="../3rdparty/nestable/jquery.nestable.js"></script>
+  <script src="../3rdparty/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+  <script src="../3rdparty/autosize/dist/autosize.min.js"></script>
+  <script src="../3rdparty/bootstrap-show-password/dist/bootstrap-show-password.min.js"></script>
+  <script src="../3rdparty/dropify/dist/js/dropify.min.js"></script>
+  <script src="../3rdparty/html5-form-validation/dist/jquery.validation.min.js"></script>
+  <script src="../3rdparty/jquery-steps/build/jquery.steps.min.js"></script>
+  <script src="../3rdparty/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="../3rdparty/select2/dist/js/select2.full.min.js"></script>
+  <script src="../3rdparty/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+  <!-- Fellowary HTML Fellowary MODULES-->
+  <!-- v1.0.0 -->
+  <link rel="stylesheet" type="text/css" href="../overlay/vendors/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/core/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/widgets/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/system/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/menu-left/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/menu-top/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/footer/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/topbar/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/subbar/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/sidebar/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/chat/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/extra-apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../overlay/ecommerce/style.css">
+
+  <!-- Extension specific js -->
+  <script src="/js/overlay_libs.js"></script>
+  <script src="/js/core.js"></script>
+  <script src="/js/menu-left.js"></script>
+  <script src="/js/menu-top.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/topbar.js"></script>
+  <script src="/js/chat.js"></script>
+</head>
+<body class="fel__menu--flyout fel__menu--white fel__menu__submenu--blue fel__layout--grayBackground fel__layout--cardsShadow">
+  <div class="fel__layout fel__layout--hasSider">
+    <div class="fel__menuLeft">
+      <div class="fel__menuLeft__outer">
+        <div class="fel__menuLeft__mobileToggleButton fel__menuLeft__mobileActionToggle">
+          <span></span>
+        </div>
+        <div class="fel__menuLeft__toggleButton fel__menuLeft__actionToggle">
+          <span></span>
+          <span></span>
+        </div>
+        <a href="javascript: void(0);" class="fel__menuLeft__logo">
+          <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary" />
+          <div class="fel__menuLeft__logo__name">Fellowary</div>
+          <div class="fel__menuLeft__logo__descr">Chat</div>
+        </a>
+        <a href="javascript: void(0);" class="fel__menuLeft__user">
+          <div class="fel__menuLeft__user__avatar">
+            <img src="../overlay/core/img/avatars/avatar.png" alt="David Beckham" />
+          </div>
+          <div class="fel__menuLeft__user__name">
+            David Beckham
+          </div>
+          <div class="fel__menuLeft__user__role">
+            Administrator
+          </div>
+        </a>
+        <div class="fel__menuLeft__container fel__customScroll">
+          <ul class="fel__menuLeft__list">
+            <li class="fel__menuLeft__category">
+              <span>Information</span>
+            </li>
+            <li class="fel__menuLeft__item">
+              <a href="javascript: void(0)" class="fel__menuLeft__link fel__sidebar__actionToggle">
+                <i class="fe fe-settings fel__menuLeft__icon"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="fel__menuLeft__item">
+              <a href="https://fellowary.com/docs" target="_blank" class="fel__menuLeft__link">
+                <i class="fe fe-compass fel__menuLeft__icon"></i>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li class="fel__menuLeft__category">
+              <span>Dashboards</span>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-home fel__menuLeft__icon"></i>
+                <span>Dashboards</span>
+                <span class="badge text-white bg-blue-light float-right mt-1 px-2">6</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="dashboards-analytics.html" class="fel__menuLeft__link">
+                    <span>Analytics</span>
+                  </a>
+                </li>
+                <li class=" fel__menuLeft__item">
+                  <a href="dashboards-statistics.html" class="fel__menuLeft__link">
+                    <span>Statistics</span>
+                  </a>
+                </li>
+                <li class=" fel__menuLeft__item">
+                  <a href="dashboards-ecommerce.html" class="fel__menuLeft__link">
+                    <span>Ecommerce</span>
+                  </a>
+                </li>
+                <li class=" fel__menuLeft__item">
+                  <a href="dashboards-crypto.html" class="fel__menuLeft__link">
+                    <span>Crypto</span>
+                  </a>
+                </li>
+                <li class=" fel__menuLeft__item">
+                  <a href="dashboards-jira.html" class="fel__menuLeft__link">
+                    <span>Jira</span>
+                  </a>
+                </li>
+                <li class=" fel__menuLeft__item">
+                  <a href="dashboards-helpdesk.html" class="fel__menuLeft__link">
+                    <span>Helpdesk</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__category">
+              <span>Apps & Pages</span>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-user fel__menuLeft__icon"></i>
+                <span>System Pages</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-login.html" class="fel__menuLeft__link">
+                    <span>Login</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-forgot-password.html" class="fel__menuLeft__link">
+                    <span>Forgot Password</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-register.html" class="fel__menuLeft__link">
+                    <span>Register</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-lockscreen.html" class="fel__menuLeft__link">
+                    <span>Lockscreen</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="system-pricing-tables.html" class="fel__menuLeft__link">
+                    <span>Pricing Tables</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="system-invoice.html" class="fel__menuLeft__link">
+                    <span>Invoice</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-404.html" class="fel__menuLeft__link">
+                    <span>Page 404</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="../no-layout/system-500.html" class="fel__menuLeft__link">
+                    <span>Page 500</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-shopping-cart fel__menuLeft__icon"></i>
+                <span>Ecommerce</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="ecommerce-dashboard.html" class="fel__menuLeft__link">
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="ecommerce-orders.html" class="fel__menuLeft__link">
+                    <span>Orders</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="ecommerce-product-catalog.html" class="fel__menuLeft__link">
+                    <span>Product Catalog</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="ecommerce-product-details.html" class="fel__menuLeft__link">
+                    <span>Product Details</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="ecommerce-cart.html" class="fel__menuLeft__link">
+                    <span>Cart</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-database fel__menuLeft__icon"></i>
+                <span>Apps</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="apps-messaging.html" class="fel__menuLeft__link">
+                    <span>Messaging</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="apps-calendar.html" class="fel__menuLeft__link">
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="apps-mail.html" class="fel__menuLeft__link">
+                    <span>Mail</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="apps-profile.html" class="fel__menuLeft__link">
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="apps-gallery.html" class="fel__menuLeft__link">
+                    <span>Gallery</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-hard-drive fel__menuLeft__icon"></i>
+                <span>Extra Apps</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-github-explore.html" class="fel__menuLeft__link">
+                    <span>Github Explore</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-github-discuss.html" class="fel__menuLeft__link">
+                    <span>Github Discuss</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-digitalocean-droplets.html" class="fel__menuLeft__link">
+                    <span>DigitalOcean Droplets</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-digitalocean-create.html" class="fel__menuLeft__link">
+                    <span>DigitalOcean Create</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-google-analytics.html" class="fel__menuLeft__link">
+                    <span>Google Analytics</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-wordpress-post.html" class="fel__menuLeft__link">
+                    <span>Wordpress Post</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-wordpress-posts.html" class="fel__menuLeft__link">
+                    <span>Wordpress Posts</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-wordpress-add.html" class="fel__menuLeft__link">
+                    <span>Wordpress Add</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-todoist-list.html" class="fel__menuLeft__link">
+                    <span>Todoist List</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-jira-dashboard.html" class="fel__menuLeft__link">
+                    <span>Jira Dashboard</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-jira-agile-board.html" class="fel__menuLeft__link">
+                    <span>Jira Agile Board</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-apps-helpdesk-dashboard.html" class="fel__menuLeft__link">
+                    <span>Helpdesk Dashboard</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__category">
+              <span>Components</span>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-image fel__menuLeft__icon"></i>
+                <span>Widgets</span>
+                <span class="badge text-white bg-blue-light float-right mt-1 px-2">47</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="widgets-general.html" class="fel__menuLeft__link">
+                    <span>General</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="widgets-lists.html" class="fel__menuLeft__link">
+                    <span>Lists</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="widgets-tables.html" class="fel__menuLeft__link">
+                    <span>Tables</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="widgets-charts.html" class="fel__menuLeft__link">
+                    <span>Charts</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-credit-card fel__menuLeft__icon"></i>
+                <span>Cards</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-cards.html" class="fel__menuLeft__link">
+                    <span>Basic Cards</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-cards-tabbed.html" class="fel__menuLeft__link">
+                    <span>Tabbed Cards</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-bookmark fel__menuLeft__icon"></i>
+                <span>Bootstrap</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-tabs-pills-navs.html" class="fel__menuLeft__link">
+                    <span>Tabs / Pills / Navs</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-alerts.html" class="fel__menuLeft__link">
+                    <span>Alerts</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-badge-pills.html" class="fel__menuLeft__link">
+                    <span>Badge / Pills</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-breadcrumb.html" class="fel__menuLeft__link">
+                    <span>Breadcrumb</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-buttons.html" class="fel__menuLeft__link">
+                    <span>Buttons</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-button-group.html" class="fel__menuLeft__link">
+                    <span>Button Group</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-carousel.html" class="fel__menuLeft__link">
+                    <span>Carousel</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-collapse.html" class="fel__menuLeft__link">
+                    <span>Collapse</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-checkbox-radio.html" class="fel__menuLeft__link">
+                    <span>Checkbox / Radio</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-dropdowns.html" class="fel__menuLeft__link">
+                    <span>Dropdowns</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-list-group.html" class="fel__menuLeft__link">
+                    <span>List Group</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-modal.html" class="fel__menuLeft__link">
+                    <span>Modal</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-pagination.html" class="fel__menuLeft__link">
+                    <span>Pagination</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-popovers.html" class="fel__menuLeft__link">
+                    <span>Popovers</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-progress.html" class="fel__menuLeft__link">
+                    <span>Progress</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="bootstrap-tooltips.html" class="fel__menuLeft__link">
+                    <span>Tooltips</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-hard-drive fel__menuLeft__icon"></i>
+                <span>Form Plugins</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-bootstrap-select.html" class="fel__menuLeft__link">
+                    <span>Bootstrap Select</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-select2.html" class="fel__menuLeft__link">
+                    <span>Select2</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-form-wizard.html" class="fel__menuLeft__link">
+                    <span>Form Wizard</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-form-validation.html" class="fel__menuLeft__link">
+                    <span>Form Validation</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-autocomplete.html" class="fel__menuLeft__link">
+                    <span>Autocomplete</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-input-mask.html" class="fel__menuLeft__link">
+                    <span>Input Mask</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-file-uploads.html" class="fel__menuLeft__link">
+                    <span>File Uploads</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="form-plugins-extras.html" class="fel__menuLeft__link">
+                    <span>Extras</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-hard-drive fel__menuLeft__icon"></i>
+                <span>Extra Plugins</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-date-picker.html" class="fel__menuLeft__link">
+                    <span>Date Picker</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-calendar.html" class="fel__menuLeft__link">
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-owl-carousel.html" class="fel__menuLeft__link">
+                    <span>Owl Carousel</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-slider.html" class="fel__menuLeft__link">
+                    <span>Slider</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-notifications-alerts.html" class="fel__menuLeft__link">
+                    <span>Notifications / Alerts</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-loading-progress.html" class="fel__menuLeft__link">
+                    <span>Loading Progress</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-steps.html" class="fel__menuLeft__link">
+                    <span>Steps</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-text-editor.html" class="fel__menuLeft__link">
+                    <span>Text Editor</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="extra-plugins-nestable.html" class="fel__menuLeft__link">
+                    <span>Nestable</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-menu fel__menuLeft__icon"></i>
+                <span>Tables</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="tables-bootstrap-tables.html" class="fel__menuLeft__link">
+                    <span>Bootstrap Tables</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="tables-datatables.html" class="fel__menuLeft__link">
+                    <span>DataTables</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="tables-editable-tables.html" class="fel__menuLeft__link">
+                    <span>Editable Tables</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-pie-chart fel__menuLeft__icon"></i>
+                <span>Charts</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="charts-chartist-js.html" class="fel__menuLeft__link">
+                    <span>Chartist.js</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="charts-chart-js.html" class="fel__menuLeft__link">
+                    <span>Chart.js</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="charts-c3.html" class="fel__menuLeft__link">
+                    <span>C3</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="charts-peity.html" class="fel__menuLeft__link">
+                    <span>Peity</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__item fel__menuLeft__submenu">
+              <a href="javascript: void(0)" class="fel__menuLeft__link">
+                <i class="fe fe-star fel__menuLeft__icon"></i>
+                <span>Icons</span>
+              </a>
+              <ul class="fel__menuLeft__list">
+                <li class="fel__menuLeft__item">
+                  <a href="icons-feather-icons.html" class="fel__menuLeft__link">
+                    <span>Feather Icons</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="icons-fontawesome.html" class="fel__menuLeft__link">
+                    <span>FontAwesome</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="icons-linearicons-free.html" class="fel__menuLeft__link">
+                    <span>Linearions Free</span>
+                  </a>
+                </li>
+                <li class="fel__menuLeft__item">
+                  <a href="icons-icomoon-free.html" class="fel__menuLeft__link">
+                    <span>Icomoon Free</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="fel__menuLeft__category">
+              <span>Advanced</span>
+            </li>
+            <li class=" fel__menuLeft__item">
+              <a href="advanced-form-examples.html" class="fel__menuLeft__link">
+                <i class="fe fe-menu fel__menuLeft__icon"></i>
+                <span>Form Examples</span>
+              </a>
+            </li>
+            <li class=" fel__menuLeft__item">
+              <a href="advanced-email-templates.html" class="fel__menuLeft__link">
+                <i class="fe fe-mail fel__menuLeft__icon"></i>
+                <span>Email Templates</span>
+              </a>
+            </li>
+            <li class=" fel__menuLeft__item">
+              <a href="advanced-utilities.html" class="fel__menuLeft__link">
+                <i class="fe fe-inbox fel__menuLeft__icon"></i>
+                <span>Utilities</span>
+              </a>
+            </li>
+            <li class=" fel__menuLeft__item">
+              <a href="advanced-grid.html" class="fel__menuLeft__link">
+                <i class="fe fe-grid fel__menuLeft__icon"></i>
+                <span>Grid</span>
+              </a>
+            </li>
+            <li class=" fel__menuLeft__item">
+              <a href="advanced-typography.html" class="fel__menuLeft__link">
+                <i class="fe fe-type fel__menuLeft__icon"></i>
+                <span>Typography</span>
+              </a>
+            </li>
+          </ul>
+          <div class="fel__menuLeft__banner">
+            <p>More components, more styles, more themes, and premium support!</p>
+            <a href="javascript: void();" class="btn btn-white text-center d-block">Buy Fellowary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fel__menuLeft__backdrop fel__menuLeft__mobileActionToggle"></div>
+    <div class="fel__sidebar">
+      <a
+        href="javascript: void(0);"
+        class="fel__sidebar__close fel__sidebar__actionToggle fe fe-x-circle"
+      ></a>
+      <h5>
+        <strong>Theme Settings</strong>
+      </h5>
+      <div class="fel__utils__line mb-4" style="margin-top: 19px;"></div>
+      <div class="fel__sidebar__scroll">
+        <p class="text-muted">
+          This component gives possibility to construct custom blocks with any widgets, components and
+          elements inside, like this theme settings
+        </p>
+        <div class="fel__sidebar__type">
+          <div class="fel__sidebar__type__title">
+            <span>Menu Type</span>
+          </div>
+          <div class="fel__sidebar__type__items">
+            <div class="row">
+              <div class="col-6">
+                <label class="fel__utils__control fel__utils__control__radio">
+                  <input type="radio" name="menuType" checked to="body" setting="" />
+                  <span class="fel__utils__control__indicator"></span>
+                  Default
+                </label>
+                <label class="fel__utils__control fel__utils__control__radio hideIfMenuTop">
+                  <input type="radio" name="menuType" to="body" setting="fel__menu--flyout" />
+                  <span class="fel__utils__control__indicator"></span>
+                  Flyout
+                </label>
+              </div>
+              <div class="col-6">
+                <label class="fel__utils__control fel__utils__control__radio hideIfMenuTop">
+                  <input type="radio" name="menuType" to="body" setting="fel__menu--compact" />
+                  <span class="fel__utils__control__indicator"></span>
+                  Compact
+                </label>
+                <label class="fel__utils__control fel__utils__control__radio">
+                  <input type="radio" name="menuType" to="body" setting="fel__menu--nomenu" />
+                  <span class=" fel__utils__control__indicator"></span>
+                  No Menu
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fel__sidebar__item hideIfMenuTop">
+          <div class="fel__sidebar__label">
+            Toggled left menu
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__menu--toggled" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item hideIfMenuTop">
+          <div class="fel__sidebar__label">
+            Unfixed left menu
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__menu--unfixed" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Fixed topbar
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--fixedHeader" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Menu color
+          </div>
+          <div class="fel__sidebar__container">
+            <div class="fel__sidebar__select" to="body">
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--white"
+                setting="fel__menu--white"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--gray"
+                setting="fel__menu--gray"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--blue"
+                setting="fel__menu--blue"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--black fel__sidebar__select__item--active"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Flyout menu
+          </div>
+          <div class="fel__sidebar__container">
+            <div class="fel__sidebar__select" to="body">
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--white"
+                setting="fel__menu__submenu--white"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--gray"
+                setting="fel__menu__submenu--gray"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--blue fel__sidebar__select__item--active"
+                setting="fel__menu__submenu--blue"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--black"
+                setting="fel__menu__submenu--black"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Login color
+          </div>
+          <div class="fel__sidebar__container">
+            <div class="fel__sidebar__select" to="body">
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--white"
+                setting="fel__auth--white"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--gray fel__sidebar__select__item--active"
+                setting=""
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--blue"
+                setting="fel__auth--blue"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--black"
+                setting="fel__auth--black"
+              ></div>
+              <div
+                class="fel__sidebar__select__item fel__sidebar__select__item--img"
+                setting="fel__auth--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Content no max-width
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--contentNoMaxWidth" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            App max-width
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--appMaxWidth" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Gray background
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--grayBackground" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Gray topbar
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--grayTopbar" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Squared card borders
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--squaredBorders" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Card shadow
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--cardsShadow" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Borderless cards
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__layout--borderless" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fel__sidebar__item">
+          <div class="fel__sidebar__label">
+            Menu shadow
+          </div>
+          <div class="fel__sidebar__container">
+            <label class="fel__sidebar__switch">
+              <input type="checkbox" to="body" setting="fel__menu--shadow" />
+              <span class="fel__sidebar__switch__slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="fel__sidebar__toggleButton fel__sidebar__actionToggle btn btn-rounded btn-light text-nowrap text-dark font-weight-bold font-size-18"
+    >
+      <i class="fe fe-settings text-blue mr-md-2"></i>
+      <span class="d-none d-md-inline">Settings</span>
+    </button>
+    <div class="fel__chat">
+      <button
+        class="fel__chat__toggleButton fel__chat__actionToggle btn btn-rounded btn-light text-nowrap text-dark font-weight-bold font-size-18"
+      >
+        <i class="fe fe-message-square text-blue mr-md -2"></i>
+        <span class="d-none d-md-inline">Support Chat</span>
+      </button>
+      <div class="fel__chat__container">
+        <div class="d-flex flex-wrap mb-2">
+          <div class="text-dark font-size-18 font-weight-bold mr-auto">Support Chat</div>
+          <button class="fel__g14__closeBtn btn btn-link fel__chat__actionToggle">
+            <i class="fe fe-x-square font-size-21 align-middle text-gray-6"></i>
+          </button>
+        </div>
+        <div class="fel__chat__innerContainer d-flex flex-column justify-content-end">
+          <div class="fel__g14__contentWrapper fel__customScroll">
+            <div class="fel__g14__message">
+              <div class="fel__g14__messageContent">
+                <div class="text-gray-4 font-size-12 text-uppercase">You, 5 min ago</div>
+                <div>
+                  Hi! Anyone here? I want to know how I can buy Fellowary?
+                </div>
+              </div>
+              <div class="fel__g14__messageAvatar fel__utils__avatar">
+                <img src="../overlay/core/img/avatars/avatar-2.png" alt="You" />
+              </div>
+            </div>
+            <div class="fel__g14__message fel__g14__message--answer">
+              <div class="fel__g14__messageContent">
+                <div class="text-gray-4 font-size-12 text-uppercase">Mary, 14 sec ago</div>
+                <div>
+                  Please call us + 100 295 000
+                </div>
+              </div>
+              <div class="fel__g14__messageAvatar fel__utils__avatar">
+                <img src="../overlay/core/img/avatars/2.jpg" alt="Mary Stanform" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-2 pb-2">
+          Mary is typing...
+        </div>
+        <div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Send message..."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fe fe-send align-middle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fel__layout">
+      <div class="fel__layout__header">
+        <div class="fel__utils__header">
+          <div class="fel__topbar">
+            <div class="fel__topbar__searchDropdown dropdown mr-md-4 mr-auto">
+              <div class="fel__topbar__search dropdown-toggle" data-toggle="dropdown" data-offset="5,15">
+                <div class="fel__topbar__searchContainer">
+                  <i class="fel__topbar__searchIcon fe fe-search"></i>
+                  <input
+                    class="fel__topbar__searchInput"
+                    type="text"
+                    placeholder="Start typing to search..."
+                  />
+                </div>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div class="fel__customScroll">
+                  <div class="fel__l1 height-300">
+                    <div class="text-uppercase font-size-12 mb-2 text-gray-6">Documents (3)</div>
+                    <ul class="list-unstyled">
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__l1__itemPic mr-3">
+                            <i class="fel__l1__itemIcon fe fe-file"></i>
+                          </div>
+                          <div>
+                            <div class="text-blue">System Requirements.pdf</div>
+                            <div class="text-muted">568kb</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__l1__itemPic mr-3">
+                            <i class="fel__l1__itemIcon fe fe-file"></i>
+                          </div>
+                          <div>
+                            <div class="text-blue">Queue Info.pdf</div>
+                            <div class="text-muted">1.2mb</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__l1__itemPic mr-3">
+                            <i class="fel__l1__itemIcon fe fe-file"></i>
+                          </div>
+                          <div>
+                            <div class="text-blue">Affected_app.mov</div>
+                            <div class="text-muted">67mb</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="text-uppercase font-size-12 mb-2 text-gray-6">Agents (4)</div>
+                    <ul class="list-unstyled">
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__utils__avatar mr-3">
+                            <img src="../overlay/core/img/avatars/5.jpg" alt="Mary Stanform" />
+                          </div>
+                          <div>
+                            <div class="text-blue">Mary Stanform</div>
+                            <div class="text-muted">Sales Manager</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__utils__avatar mr-3">
+                            <img src="../overlay/core/img/avatars/1.jpg" alt="Jamie Rockstar" />
+                          </div>
+                          <div>
+                            <div class="text-blue">Jamie Rockstar</div>
+                            <div class="text-muted">Blackoffice Agent</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="fel__l1__item">
+                        <a href="javascript: void(0);" class="fel__l1__itemLink">
+                          <div class="fel__utils__avatar mr-3">
+                            <img src="../overlay/core/img/avatars/2.jpg" alt="Axel Freddie" />
+                          </div>
+                          <div>
+                            <div class="text-blue">Axel Freddie</div>
+                            <div class="text-muted">Blackoffice Agent</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown mr-auto d-none d-md-block">
+              <a
+                href=""
+                class="dropdown-toggle text-nowrap"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                data-offset="0,15"
+              >
+                <i class="dropdown-toggle-icon fe fe-book-open"></i>
+                <span class="dropdown-toggle-text">Issues History</span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <div class="dropdown-header">Active</div>
+                <a class="dropdown-item" href="javascript:void(0)">Project Management</a>
+                <a class="dropdown-item" href="javascript:void(0)">User Inetrface Development</a>
+                <a class="dropdown-item" href="javascript:void(0)">Documentation</a>
+                <div class="dropdown-header">Inactive</div>
+                <a class="dropdown-item" href="javascript:void(0)">Marketing</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-settings"></i>
+                  Settings
+                </a>
+              </div>
+            </div>
+            <p class="mb-0 mr-4 d-xl-block d-none">
+              Status
+              <span class="ml-1 badge bg-danger text-white font-size-12 text-uppercase fel__topbar__status"
+                >Trialing</span
+              >
+            </p>
+            <div class="dropdown mr-4 d-none d-sm-block">
+              <a href="" class="dropdown-toggle text-nowrap" data-toggle="dropdown" data-offset="5,15">
+                <span class="dropdown-toggle-text">EN</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" role="menu">
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><span class="text-uppercase font-size-12 mr-1 align-text-bottom">EN</span> English</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><span class="text-uppercase font-size-12 mr-1 align-text-bottom">RU</span> Русский</a
+                >
+                <a class="dropdown-item" href="javascript:void(0)"
+                  ><span class="text-uppercase font-size-12 mr-1 align-text-bottom">CN</span> 简体中文</a
+                >
+              </div>
+            </div>
+            <div class="fel__topbar__actionsDropdown dropdown mr-4 d-none d-sm-block">
+              <a
+                href=""
+                class="dropdown-toggle text-nowrap"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                data-offset="0,15"
+              >
+                <i class="dropdown-toggle-icon fe fe-menu"></i>
+                <span class="dropdown-toggle-text">Actions</span>
+              </a>
+              <div class="fel__topbar__actionsDropdownMenu dropdown-menu dropdown-menu-right" role="menu">
+                <div class="card-header card-header-flex">
+                  <ul
+                    class="nav nav-tabs nav-tabs-line nav-tabs-line-bold nav-tabs-noborder nav-tabs-stretched flex-nowrap"
+                  >
+                    <li class="nav-item" role="tablist">
+                      <a
+                        href="#tab-alert-content"
+                        class="nav-link active"
+                        id="tab-alert"
+                        data-toggle="tab"
+                        aria-selected="true"
+                      >
+                        Alerts
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#tab-events-content"
+                        class="nav-link"
+                        id="tab-events"
+                        data-toggle="tab"
+                        aria-selected="false"
+                      >
+                        Events
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#tab-actions-content"
+                        class="nav-link"
+                        id="tab-actions"
+                        data-toggle="tab"
+                        aria-selected="false"
+                      >
+                        Actions
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="height-300 fel__customScroll">
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="tab-alert-content"
+                        role="tabpanel"
+                        aria-labelledby="tab-alert-content"
+                      >
+                        <ul class="width-250 list-unstyled">
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Update Status:
+                                <strong class="text-black">New</strong>
+                              </p>
+                              <time class="fel__l2__time">5 min ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              Mary has approved your quote.
+                            </p>
+                          </li>
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Update Status:
+                                <strong class="text-danger">Rejected</strong>
+                              </p>
+                              <time class="fel__l2__time">15 min ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              Mary has declined your quote.
+                            </p>
+                          </li>
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Payment Received:
+                                <strong class="text-black">$5,467.00</strong>
+                              </p>
+                              <time class="fel__l2__time">15 min ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              GOOGLE, LLC AUTOMATED PAYMENTS
+                            </p>
+                          </li>
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Notification:
+                                <strong class="text-danger">Access Denied</strong>
+                              </p>
+                              <time class="fel__l2__time">5 Hours ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              The system prevent login to your account
+                            </p>
+                          </li>
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Payment Received:
+                                <strong class="text-black">$55,829.00</strong>
+                              </p>
+                              <time class="fel__l2__time">1 day ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              GOOGLE, LLC AUTOMATED PAYMENTS
+                            </p>
+                          </li>
+                          <li class="mb-3">
+                            <div class="fel__l2__head">
+                              <p class="fel__l2__title">
+                                Notification:
+                                <strong class="text-danger">Access Denied</strong>
+                              </p>
+                              <time class="fel__l2__time">5 Hours ago</time>
+                            </div>
+                            <p class="fel__l2__content">
+                              The system prevent login to your account
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab-events-content"
+                        role="tabpanel"
+                        aria-labelledby="tab-alert-content"
+                      >
+                        <div class="width-250">
+                          No Events
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="tab-actions-content"
+                        role="tabpanel"
+                        aria-labelledby="tab-alert-content"
+                      >
+                        <div class="width-250">
+                          No Actions
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a
+                href=""
+                class="dropdown-toggle text-nowrap"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                data-offset="5,15"
+              >
+                <img
+                  class="dropdown-toggle-avatar"
+                  src="../overlay/core/img/avatars/avatar-2.png"
+                  alt="User avatar"
+                />
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" role="menu">
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-user"></i>
+                  Profile
+                </a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-header">
+                  Home
+                </div>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-chevron-right"></i>
+                  System Dashboard
+                </a>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-chevron-right"></i>
+                  User Boards
+                </a>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-chevron-right"></i>
+                  Issue Navigator
+                  <span class="badge badge-success font-size-11 ml-2">25 New</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="dropdown-icon fe fe-log-out"></i> Logout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fel__layout__content">
+        <div class="fel__utils__content">
+          <div class="fel__utils__heading">
+  <h5>Overlay</h5>
+</div>
+<div class="row">
+  <div id="filemanager">
+    <div class="row">
+      <!-- File Manager tile View -->
+      <div class="fel__gallery">
+        <div class="text-uppercase font-weight-bold text-dark mb-3">Galleries</div>
+        <div class="d-flex flex-wrap mb-4">
+          <label class="fel__utils__control fel__utils__control__checkbox fel__gallery__control">
+            <input type="checkbox" checked="checked" />
+            <span class="fel__utils__control__indicator"></span>
+            Models
+          </label>
+          <label class="fel__utils__control fel__utils__control__checkbox fel__gallery__control">
+            <input type="checkbox" />
+            <span class="fel__utils__control__indicator"></span>
+            Fashion
+          </label>
+          <label class="fel__utils__control fel__utils__control__checkbox fel__gallery__control">
+            <input type="checkbox" />
+            <span class="fel__utils__control__indicator"></span>
+            Cars
+          </label>
+          <label class="fel__utils__control fel__utils__control__checkbox fel__gallery__control">
+            <input type="checkbox" />
+            <span class="fel__utils__control__indicator"></span>
+            Wallpapers
+          </label>
+        </div>
+        <div class="fel__gallery__items d-flex flex-wrap">
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/1.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>Spacex.jpeg</div>
+              <div>1.2mb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/2.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>flower_on_head.jpeg</div>
+              <div>768kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/3.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>pinky.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/4.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>dell2719d.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/5.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>Heating.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/3.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>pinky.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/5.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>Heating.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/2.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>flower_on_head.jpeg</div>
+              <div>768kb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/1.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>Spacex.jpeg</div>
+              <div>1.2mb</div>
+            </div>
+          </div>
+          <div class="fel__gallery__item">
+            <div class="fel__gallery__itemContent">
+              <div class="fel__gallery__itemControl">
+                <div class="btn-group fel__gallery__itemControlContainer">
+                  <button type="button" class="btn">
+                    <i class="fe fe-edit"></i>
+                  </button>
+                  <button type="button" class="btn">
+                    <i class="fe fe-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="../../components/core/img/content/photos/4.jpeg" />
+            </div>
+            <div class="text-gray-6">
+              <div>dell2719d.jpeg</div>
+              <div>945kb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="mb-5">
+          <table class="table table-hover nowrap" id="filemanager_list_view">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Date</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Damon</td>
+                <td>5516 Adolfo Green</td>
+                <td>Littelhaven</td>
+                <td>85</td>
+                <td>2014/06/13</td>
+                <td>$553,536</td>
+              </tr>
+              <tr>
+                <td>Torrey</td>
+                <td>1995 Richie Neck</td>
+                <td>West Sedrickstad</td>
+                <td>77</td>
+                <td>2014/09/12</td>
+                <td>$243,577</td>
+              </tr>
+              <tr>
+                <td>Miracle</td>
+                <td>176 Hirthe Squares</td>
+                <td>Ryleetown</td>
+                <td>82</td>
+                <td>2013/09/27</td>
+                <td>$784,802</td>
+              </tr>
+              <tr>
+                <td>Wilhelmine</td>
+                <td>44727 O&#x27;Hara Union</td>
+                <td>Dibbertfurt</td>
+                <td>68</td>
+                <td>2013/06/28</td>
+                <td>$207,291</td>
+              </tr>
+              <tr>
+                <td>Hubert</td>
+                <td>8884 Jamel Pines</td>
+                <td>Howemouth</td>
+                <td>63</td>
+                <td>2013/05/28</td>
+                <td>$584,032</td>
+              </tr>
+              <tr>
+                <td>Myrtie.Gerhold</td>
+                <td>098 Noel Way</td>
+                <td>Santinoland</td>
+                <td>13</td>
+                <td>2014/12/12</td>
+                <td>$550,087</td>
+              </tr>
+              <tr>
+                <td>Chester</td>
+                <td>14095 Kling Gateway</td>
+                <td>Andresmouth</td>
+                <td>26</td>
+                <td>2014/09/27</td>
+                <td>$177,404</td>
+              </tr>
+              <tr>
+                <td>Melany_Gerhold</td>
+                <td>1100 Steve Pines</td>
+                <td>Immanuelfort</td>
+                <td>12</td>
+                <td>2014/06/28</td>
+                <td>$162,453</td>
+              </tr>
+              <tr>
+                <td>Thea</td>
+                <td>26114 Narciso Lodge</td>
+                <td>East Opal</td>
+                <td>64</td>
+                <td>2014/11/12</td>
+                <td>$581,736</td>
+              </tr>
+              <tr>
+                <td>Albin.Kreiger</td>
+                <td>111 Hershel Stream</td>
+                <td>Hermannborough</td>
+                <td>90</td>
+                <td>2013/11/27</td>
+                <td>$921,021</td>
+              </tr>
+              <tr>
+                <td>Shanel</td>
+                <td>7579 Santa Forest</td>
+                <td>Jordaneville</td>
+                <td>14</td>
+                <td>2016/04/28</td>
+                <td>$818,20</td>
+              </tr>
+              <tr>
+                <td>Bell.Mueller</td>
+                <td>083 Kshlerin Forest</td>
+                <td>Clintmouth</td>
+                <td>98</td>
+                <td>2013/10/12</td>
+                <td>$571,46</td>
+              </tr>
+              <tr>
+                <td>Clementina</td>
+                <td>5957 Hagenes Falls</td>
+                <td>Anaishaven</td>
+                <td>45</td>
+                <td>2013/11/12</td>
+                <td>$684,588</td>
+              </tr>
+              <tr>
+                <td>Johanna.Thiel</td>
+                <td>4301 Trever Radial</td>
+                <td>Lake Augustineton</td>
+                <td>67</td>
+                <td>2013/12/27</td>
+                <td>$608,507</td>
+              </tr>
+              <tr>
+                <td>Elliott_Becker</td>
+                <td>8417 Orion Parkway</td>
+                <td>Streichside</td>
+                <td>83</td>
+                <td>2014/08/28</td>
+                <td>$447,592</td>
+              </tr>
+              <tr>
+                <td>Yasmine</td>
+                <td>67284 Kreiger Freeway</td>
+                <td>Stoltenbergside</td>
+                <td>8</td>
+                <td>2014/12/12</td>
+                <td>$358,369</td>
+              </tr>
+              <tr>
+                <td>Ada.Hoppe</td>
+                <td>69842 Peyton Viaduct</td>
+                <td>South Geovannyburgh</td>
+                <td>89</td>
+                <td>2013/05/13</td>
+                <td>$211,76</td>
+              </tr>
+              <tr>
+                <td>Sammie</td>
+                <td>46406 Powlowski Common</td>
+                <td>Cristmouth</td>
+                <td>51</td>
+                <td>2014/03/29</td>
+                <td>$345,739</td>
+              </tr>
+              <tr>
+                <td>Terrance.Borer</td>
+                <td>1568 Richmond Bypass</td>
+                <td>Schillerfort</td>
+                <td>46</td>
+                <td>2014/10/27</td>
+                <td>$634,073</td>
+              </tr>
+              <tr>
+                <td>August</td>
+                <td>731 Stiedemann Crossing</td>
+                <td>Rolfsonborough</td>
+                <td>98</td>
+                <td>2013/11/12</td>
+                <td>$203,952</td>
+              </tr>
+              <tr>
+                <td>Mckenna.Herman</td>
+                <td>63204 Hegmann Keys</td>
+                <td>New Isobelview</td>
+                <td>2</td>
+                <td>2013/08/12</td>
+                <td>$702,091</td>
+              </tr>
+              <tr class="active">
+                <td>Adrianna_Durgan</td>
+                <td>75151 Kshlerin Square</td>
+                <td>North Elwynfurt</td>
+                <td>25</td>
+                <td>2014/02/26</td>
+                <td>$481,980</td>
+              </tr>
+              <tr>
+                <td>Heath.Ryan</td>
+                <td>6778 Howe Route</td>
+                <td>Antwanbury</td>
+                <td>90</td>
+                <td>2013/08/12</td>
+                <td>$569,723</td>
+              </tr>
+              <tr>
+                <td>Alisa</td>
+                <td>64838 D&#x27;Amore Cove</td>
+                <td>Port Lempi</td>
+                <td>25</td>
+                <td>2016/04/28</td>
+                <td>$226,459</td>
+              </tr>
+              <tr>
+                <td>Treva</td>
+                <td>308 Octavia Roads</td>
+                <td>East Eunaton</td>
+                <td>37</td>
+                <td>2014/12/12</td>
+                <td>$746,921</td>
+              </tr>
+              <tr>
+                <td>Myriam_Nicolas</td>
+                <td>760 Hickle Causeway</td>
+                <td>Lake Nickolasshire</td>
+                <td>69</td>
+                <td>2014/05/13</td>
+                <td>$293,786</td>
+              </tr>
+              <tr>
+                <td>Gerhard</td>
+                <td>893 Mara Parkway</td>
+                <td>Elmermouth</td>
+                <td>32</td>
+                <td>2014/11/27</td>
+                <td>$856,275</td>
+              </tr>
+              <tr>
+                <td>Monica</td>
+                <td>0039 Heath Plain</td>
+                <td>West Bentonhaven</td>
+                <td>80</td>
+                <td>2016/05/13</td>
+                <td>$821,600</td>
+              </tr>
+              <tr>
+                <td>Lacey</td>
+                <td>995 Lang Springs</td>
+                <td>Cordellburgh</td>
+                <td>94</td>
+                <td>2014/11/27</td>
+                <td>$990,291</td>
+              </tr>
+              <tr>
+                <td>Bret</td>
+                <td>282 Susana Heights</td>
+                <td>Kaneport</td>
+                <td>47</td>
+                <td>2013/05/28</td>
+                <td>$445,494</td>
+              </tr>
+              <tr>
+                <td>Jennie</td>
+                <td>755 Greyson Key</td>
+                <td>East Jazmyne</td>
+                <td>94</td>
+                <td>2016/03/29</td>
+                <td>$530,408</td>
+              </tr>
+              <tr>
+                <td>Emerson</td>
+                <td>784 Adriel Radial</td>
+                <td>New Jerroldland</td>
+                <td>4</td>
+                <td>2014/02/26</td>
+                <td>$805,823</td>
+              </tr>
+              <tr>
+                <td>Herta</td>
+                <td>7491 Bednar Gardens</td>
+                <td>Port Lucianoton</td>
+                <td>23</td>
+                <td>2013/10/12</td>
+                <td>$352,269</td>
+              </tr>
+              <tr>
+                <td>Stone_Deckow</td>
+                <td>6440 Moen Loop</td>
+                <td>Jenningsbury</td>
+                <td>23</td>
+                <td>2014/07/28</td>
+                <td>$219,573</td>
+              </tr>
+              <tr>
+                <td>Davin</td>
+                <td>50922 Kiara Square</td>
+                <td>Port Edmund</td>
+                <td>37</td>
+                <td>2014/11/27</td>
+                <td>$241,432</td>
+              </tr>
+              <tr>
+                <td>Johnathan_Mraz</td>
+                <td>1998 Webster Fords</td>
+                <td>East Vern</td>
+                <td>50</td>
+                <td>2014/09/12</td>
+                <td>$290,875</td>
+              </tr>
+              <tr>
+                <td>Gunnar</td>
+                <td>92873 Barney Club</td>
+                <td>Beierview</td>
+                <td>82</td>
+                <td>2014/03/29</td>
+                <td>$569,778</td>
+              </tr>
+              <tr>
+                <td>Raina</td>
+                <td>828 Cathy Streets</td>
+                <td>West Uriahville</td>
+                <td>26</td>
+                <td>2013/09/27</td>
+                <td>$186,229</td>
+              </tr>
+              <tr>
+                <td>Marjorie.Orn</td>
+                <td>314 Aurore Canyon</td>
+                <td>Port Jaquelineburgh</td>
+                <td>3</td>
+                <td>2014/06/28</td>
+                <td>$547,752</td>
+              </tr>
+              <tr>
+                <td>Citlalli_Wehner</td>
+                <td>139 Ebert Freeway</td>
+                <td>Lake Esperanzamouth</td>
+                <td>78</td>
+                <td>2016/01/27</td>
+                <td>$892,012</td>
+              </tr>
+              <tr>
+                <td>Ruben.Reilly</td>
+                <td>02868 Cronin Tunnel</td>
+                <td>Rossieville</td>
+                <td>87</td>
+                <td>2013/09/12</td>
+                <td>$520,483</td>
+              </tr>
+              <tr>
+                <td>Gunner_Jakubowski</td>
+                <td>80391 Maxwell Parks</td>
+                <td>South Travon</td>
+                <td>26</td>
+                <td>2014/03/29</td>
+                <td>$272,005</td>
+              </tr>
+              <tr>
+                <td>Josephine</td>
+                <td>36238 Satterfield Avenue</td>
+                <td>New Alexanderhaven</td>
+                <td>51</td>
+                <td>2016/01/27</td>
+                <td>$189,18</td>
+              </tr>
+              <tr>
+                <td>Ceasar_Orn</td>
+                <td>2795 Clement Ridges</td>
+                <td>Beckerhaven</td>
+                <td>78</td>
+                <td>2013/11/27</td>
+                <td>$958,117</td>
+              </tr>
+              <tr>
+                <td>Coby</td>
+                <td>53700 Pagac Lodge</td>
+                <td>South Hershel</td>
+                <td>86</td>
+                <td>2013/08/28</td>
+                <td>$481,619</td>
+              </tr>
+              <tr>
+                <td>Colin</td>
+                <td>637 Paucek Mountain</td>
+                <td>West Luraberg</td>
+                <td>77</td>
+                <td>2016/02/26</td>
+                <td>$298,110</td>
+              </tr>
+              <tr>
+                <td>Monique_White</td>
+                <td>415 Corkery Walks</td>
+                <td>West Lauryn</td>
+                <td>97</td>
+                <td>2014/02/11</td>
+                <td>$222,343</td>
+              </tr>
+              <tr>
+                <td>Jarvis.Simonis</td>
+                <td>0778 Elvis Spurs</td>
+                <td>Harrisfurt</td>
+                <td>62</td>
+                <td>2013/05/28</td>
+                <td>$336,046</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Date</th>
+                <th>Salary</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--File Manager List view -->
+<div class="fel__auth">
+  <div class="pt-5 pb-5 d-flex align-items-end mt-auto">
+    <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary Logo" />
+    <div class="fel__utils__logo__text">
+      <div class="fel__utils__logo__name text-uppercase text-dark font-size-21">Fellowary</div>
+      <div class="fel__utils__logo__descr text-uppercase font-size-12 text-gray-6">
+        Fellowary Logo
+      </div>
+    </div>
+  </div>
+  <div class="fel__auth__container pl-5 pr-5 pt-5 pb-5 bg-white text-center">
+    <div class="text-dark font-size-30 mb-4">Account Locked</div>
+    <div class="fel__utils__avatar fel__utils__avatar--size64 d-inline-block mb-2">
+      <img src="../overlay/core/img/avatars/2.jpg" alt="Mary Stanform" />
+    </div>
+    <div class="font-weight-bold font-size-18 text-dark mb-4">Mary Stanform</div>
+    <form action="#" class="mb-4">
+      <div class="form-group mb-4">
+        <input type="password" class="form-control" placeholder="Password" />
+      </div>
+      <button class="text-center btn btn-success w-100 font-weight-bold font-size-18">
+        Log In
+      </button>
+    </form>
+  </div>
+  <div class="text-center font-size-18 pt-4 mb-auto">
+    Don't have an account?
+    <a href="#" class="font-weight-bold text-blue text-underlined"><u>Sign Up</u></a>
+  </div>
+  <div class="mt-auto pb-5 pt-5">
+    <ul class="fel__auth__footerNav list-unstyled d-flex mb-2 flex-wrap justify-content-center">
+      <li>
+        <a href="#">Terms of Use</a>
+      </li>
+      <li>
+        <a href="#">Compliance</a>
+      </li>
+      <li>
+        <a href="#">Support</a>
+      </li>
+      <li>
+        <a href="#">Contacts</a>
+      </li>
+    </ul>
+    <div class="text-gray-4 text-center">© 2021 Fellowary. All rights reserved.</div>
+  </div>
+</div>
+<div class="fel__auth">
+  <div class="pt-5 pb-5 d-flex align-items-end mt-auto">
+    <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary Logo" />
+    <div class="fel__utils__logo__text">
+      <div class="fel__utils__logo__name text-uppercase text-dark font-size-21">Fellowary</div>
+      <div class="fel__utils__logo__descr text-uppercase font-size-12 text-gray-6">
+        Fellowary Logo
+      </div>
+    </div>
+  </div>
+  <div class="fel__auth__container pl-5 pr-5 pt-5 pb-5 bg-white text-center">
+    <div class="text-dark font-size-30 mb-4">Log In</div>
+    <form action="#" class="mb-4">
+      <div class="form-group mb-4">
+        <input type="email" class="form-control" placeholder="Email Address" />
+      </div>
+      <div class="form-group mb-4">
+        <input type="password" class="form-control" placeholder="Password" />
+      </div>
+      <button class="text-center btn btn-success w-100 font-weight-bold font-size-18">
+        Log In
+      </button>
+    </form>
+    <a
+      href="#"
+      class="fel__auth__googleSign font-weight-bold font-size-18 text-dark btn btn-outline-light w-100 mb-3"
+      >Log in with Google</a
+    >
+    <a href="#" class="text-blue font-weight-bold font-size-18">Forgot password?</a>
+  </div>
+  <div class="text-center font-size-18 pt-4 mb-auto">
+    Don't have an account?
+    <a href="#" class="font-weight-bold text-blue text-underlined"><u>Sign Up</u></a>
+  </div>
+  <div class="mt-auto pb-5 pt-5">
+    <ul class="fel__auth__footerNav list-unstyled d-flex mb-2 flex-wrap justify-content-center">
+      <li>
+        <a href="#">Terms of Use</a>
+      </li>
+      <li>
+        <a href="#">Compliance</a>
+      </li>
+      <li>
+        <a href="#">Support</a>
+      </li>
+      <li>
+        <a href="#">Contacts</a>
+      </li>
+    </ul>
+    <div class="text-gray-4 text-center">© 2021 Fellowary. All rights reserved.</div>
+  </div>
+</div>
+<div class="fel__auth">
+  <div class="pt-5 pb-5 d-flex align-items-end mt-auto">
+    <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary Logo" />
+    <div class="fel__utils__logo__text">
+      <div class="fel__utils__logo__name text-uppercase text-dark font-size-21">Fellowary</div>
+      <div class="fel__utils__logo__descr text-uppercase font-size-12 text-gray-6">
+        Fellowary
+      </div>
+    </div>
+  </div>
+  <div class="fel__auth__container pl-5 pr-5 pt-5 pb-5 bg-white text-center">
+    <div class="text-dark font-size-30 mb-4">Sign Up</div>
+    <form action="#" class="mb-4">
+      <div class="form-group mb-4">
+        <input type="text" class="form-control" placeholder="Full Name" />
+      </div>
+      <div class="form-group mb-4">
+        <input type="text" class="form-control" placeholder="Email Address" />
+      </div>
+      <div class="form-group mb-4">
+        <input type="password" class="form-control" placeholder="Password" />
+      </div>
+      <button class="text-center btn btn-success w-100 font-weight-bold font-size-18">
+        Sign Up
+      </button>
+    </form>
+    <a
+      href="#"
+      class="fel__auth__googleSign font-weight-bold font-size-18 text-dark btn btn-outline-light w-100 mb-4"
+      >Sign up with Google</a
+    >
+    <div class="font-size-18">
+      By signing up, you agree to the
+      <a href="#" class="text-blue font-weight-bold font-size-18">Terms of Service</a> and
+      <a href="#" class="text-blue font-weight-bold font-size-18">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="text-center font-size-18 pt-4 mb-auto">
+    Already have an account?
+    <a href="#" class="font-weight-bold text-blue text-underlined"><u>Log In</u></a>
+  </div>
+  <div class="mt-auto pb-5 pt-5">
+    <ul class="fel__auth__footerNav list-unstyled d-flex mb-2 flex-wrap justify-content-center">
+      <li>
+        <a href="#">Terms of Use</a>
+      </li>
+      <li>
+        <a href="#">Compliance</a>
+      </li>
+      <li>
+        <a href="#">Support</a>
+      </li>
+      <li>
+        <a href="#">Contacts</a>
+      </li>
+    </ul>
+    <div class="text-gray-4 text-center">© 2021 Fellowary. All rights reserved.</div>
+  </div>
+</div>
+<div class="fel__auth">
+  <div class="pt-5 pb-5 d-flex align-items-end mt-auto">
+    <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary Logo" />
+    <div class="fel__utils__logo__text">
+      <div class="fel__utils__logo__name text-uppercase text-dark font-size-21">Fellowary</div>
+      <div class="fel__utils__logo__descr text-uppercase font-size-12 text-gray-6">
+        Fellowary
+      </div>
+    </div>
+  </div>
+  <div class="fel__auth__container pl-5 pr-5 pt-5 pb-5 bg-white text-center">
+    <div class="text-dark font-size-30 mb-4">Reset Password</div>
+    <form action="#" class="mb-4">
+      <div class="form-group mb-4">
+        <input type="text" class="form-control" placeholder="Email Address" />
+      </div>
+      <button class="text-center btn btn-success w-100 font-weight-bold font-size-18">
+        Reset my password
+      </button>
+    </form>
+  </div>
+  <div class="text-center font-size-18 pt-4 mb-auto">
+    <a href="#" class="font-weight-bold text-blue"
+      ><i class="fe fe-arrow-left align"></i> Go Back</a
+    >
+  </div>
+  <div class="mt-auto pb-5 pt-5">
+    <ul class="fel__auth__footerNav list-unstyled d-flex mb-2 flex-wrap justify-content-center">
+      <li>
+        <a href="#">Terms of Use</a>
+      </li>
+      <li>
+        <a href="#">Compliance</a>
+      </li>
+      <li>
+        <a href="#">Support</a>
+      </li>
+      <li>
+        <a href="#">Contacts</a>
+      </li>
+    </ul>
+    <div class="text-gray-4 text-center">© 2021 Fellowary. All rights reserved.</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xl-4 col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex flex-wrap flex-column align-items-center">
+          <div class="fel__utils__avatar fel__utils__avatar--size64 mb-3">
+            <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+          </div>
+          <div class="text-center">
+            <div class="text-dark font-weight-bold font-size-18">Mary Stanform</div>
+            <div class="text-uppercase font-size-12 mb-3">Support team</div>
+            <button class="btn btn-primary btn-with-addon">
+              <span class="btn-addon">
+                <i class="btn-addon-icon fe fe-plus-circle"></i>
+              </span>
+              Request Access
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card text-white bg-primary">
+      <div class="card-body">
+        <div class="d-flex mb-1">
+          <div class="text-uppercase font-weight-bold mr-auto">
+            Revenue
+          </div>
+          <div>
+            +20% Goal Reached
+          </div>
+        </div>
+        <div class="d-flex mb-2">
+          <div class="font-size-24 font-weight-bold mr-auto">+3,125</div>
+          <div class="font-size-24">5,000</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 60%" role="progressbar" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <p class="text-dark font-size-48 font-weight-bold mb-2">
+          $29,931
+        </p>
+        <p class="text-uppercase text-muted mb-3">
+          Revenue today
+        </p>
+        <p class="mb-4">
+          Lorem ipsum dolor sit amit,consectetur eiusmdd tempory incididunt ut labore et dolore
+          magna elit
+        </p>
+        <a href="javascript: void(0);" class="btn btn-outline-primary mb-1">View history</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <ul class="list-unstyled">
+          <li class="fel__l19__item">
+            <div class="fel__l19__itemTime mr-3">16:00</div>
+            <div class="fel__l19__itemSeparator">
+              <div class="fel__utils__donut fel__utils__donut--danger mr-3"></div>
+            </div>
+            <div>
+              Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+              magna elit enim at minim veniam quis nostrud
+            </div>
+          </li>
+          <li class="fel__l19__item">
+            <div class="fel__l19__itemTime mr-3">15:28</div>
+            <div class="fel__l19__itemSeparator">
+              <div class="fel__utils__donut fel__utils__donut--danger mr-3"></div>
+            </div>
+            <div>
+              David Beckham was registered as administrator
+            </div>
+          </li>
+          <li class="fel__l19__item">
+            <div class="fel__l19__itemTime mr-3">14:26</div>
+            <div class="fel__l19__itemSeparator">
+              <div class="fel__utils__donut fel__utils__donut--danger mr-3"></div>
+            </div>
+            <div>
+              Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+            </div>
+          </li>
+          <li class="fel__l19__item">
+            <div class="fel__l19__itemTime mr-3">13:22</div>
+            <div class="fel__l19__itemSeparator">
+              <div class="fel__utils__donut fel__utils__donut--danger mr-3"></div>
+            </div>
+            <div>
+              Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore
+              magna elit enim at minim veniam quis nostrud
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-8 col-lg-12">
+    <div class="card">
+      <div class="card-header card-header-flex flex-column">
+        <div class="d-flex flex-wrap fel__profile__info pt-3 pb-4  mb-3">
+          <div class="mr-5">
+            <div class="text-dark font-size-18 font-weight-bold">David Beckham</div>
+            <div class="text-gray-6">@david100</div>
+          </div>
+          <div class="mr-5 text-center">
+            <div class="text-dark font-size-18 font-weight-bold">100</div>
+            <div class="text-gray-6">Posts</div>
+          </div>
+          <div class="mr-5 text-center">
+            <div class="text-dark font-size-18 font-weight-bold">17,256</div>
+            <div class="text-gray-6">Followers</div>
+          </div>
+        </div>
+        <div class="d-flex align-items-stretch mt-auto">
+          <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-bold nav-tabs-noborder nav-tabs-stretched">
+            <li class="nav-item">
+              <a class="nav-link active" href="#tab-wall-content" data-toggle="tab" aria-selected="true"
+                id="tab-wall">Agent Wall</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab-messages-content" data-toggle="tab" aria-selected="false"
+                id="tab-messages">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tab-settings-content" data-toggle="tab" id="tab-settings">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab-wall-content" role="tabpanel"
+            aria-labelledby="tab-wall-content">
+            <div class="mb-4">
+              <div>
+                <div class="d-flex flex-nowrap align-items-start pt-4">
+                  <div class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start">
+                    <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="fel__g15__contentContainer">
+                      <div class="d-flex flex-wrap mb-2">
+                        <div class="mr-auto">
+                          <div class="text-gray-6">
+                            <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                          </div>
+                          <div>Few seconds ago</div>
+                        </div>
+                        <div class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle pt-sm-0"
+                            data-toggle="dropdown"
+                            href="javascript: void(0);"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Actions</a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                        incididunt ut labore et dolore magna elit
+                      </div>
+                      <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                        <a class="text-blue mr-3" href="javascript: void(0);"
+                          ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                        >
+                        <a class="text-blue mr-3" href="javascript: void(0);"
+                          ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                        >
+                      </div>
+                    </div>
+                    <div class="d-flex flex-nowrap align-items-start pt-4">
+                      <div
+                        class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start"
+                      >
+                        <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="fel__g15__contentContainer">
+                          <div class="d-flex flex-wrap mb-2">
+                            <div class="mr-auto">
+                              <div class="text-gray-6">
+                                <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                              </div>
+                              <div>Few seconds ago</div>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <a
+                                class="nav-link dropdown-toggle pt-sm-0"
+                                data-toggle="dropdown"
+                                href="javascript: void(0);"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Actions</a
+                              >
+                              <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                            incididunt ut labore et dolore magna elit
+                          </div>
+                          <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                            >
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-nowrap align-items-start pt-4">
+                      <div
+                        class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start"
+                      >
+                        <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="fel__g15__contentContainer">
+                          <div class="d-flex flex-wrap mb-2">
+                            <div class="mr-auto">
+                              <div class="text-gray-6">
+                                <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                              </div>
+                              <div>Few seconds ago</div>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <a
+                                class="nav-link dropdown-toggle pt-sm-0"
+                                data-toggle="dropdown"
+                                href="javascript: void(0);"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Actions</a
+                              >
+                              <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                            incididunt ut labore et dolore magna elit
+                          </div>
+                          <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                            >
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex flex-nowrap align-items-start pt-4">
+                  <div class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start">
+                    <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="fel__g15__contentContainer">
+                      <div class="d-flex flex-wrap mb-2">
+                        <div class="mr-auto">
+                          <div class="text-gray-6">
+                            <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                          </div>
+                          <div>Few seconds ago</div>
+                        </div>
+                        <div class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle pt-sm-0"
+                            data-toggle="dropdown"
+                            href="javascript: void(0);"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Actions</a
+                          >
+                          <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"
+                              ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                        incididunt ut labore et dolore magna elit
+                      </div>
+                      <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                        <a class="text-blue mr-3" href="javascript: void(0);"
+                          ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                        >
+                        <a class="text-blue mr-3" href="javascript: void(0);"
+                          ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                        >
+                      </div>
+                    </div>
+                    <div class="d-flex flex-nowrap align-items-start pt-4">
+                      <div
+                        class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start"
+                      >
+                        <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="fel__g15__contentContainer">
+                          <div class="d-flex flex-wrap mb-2">
+                            <div class="mr-auto">
+                              <div class="text-gray-6">
+                                <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                              </div>
+                              <div>Few seconds ago</div>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <a
+                                class="nav-link dropdown-toggle pt-sm-0"
+                                data-toggle="dropdown"
+                                href="javascript: void(0);"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Actions</a
+                              >
+                              <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                            incididunt ut labore et dolore magna elit
+                          </div>
+                          <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                            >
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-nowrap align-items-start pt-4">
+                      <div
+                        class="fel__utils__avatar fel__utils__avatar--size64 mr-4 flex-shrink-0 align-self-start"
+                      >
+                        <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="fel__g15__contentContainer">
+                          <div class="d-flex flex-wrap mb-2">
+                            <div class="mr-auto">
+                              <div class="text-gray-6">
+                                <span class="text-dark font-weight-bold">Helen maggie</span> posted
+                              </div>
+                              <div>Few seconds ago</div>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <a
+                                class="nav-link dropdown-toggle pt-sm-0"
+                                data-toggle="dropdown"
+                                href="javascript: void(0);"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Actions</a
+                              >
+                              <div class="dropdown-menu dropdown-menu-right" role="menu" x-placement="bottom-end">
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-edit"></i> Edit Post</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-trash"></i> Delete Post</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"
+                                  ><i class="dropdown-icon fe fe-repeat"></i> Mark as Spam</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            Lorem ipsum dolor sit amit,consectetur eiusmdd tempory<br />
+                            incididunt ut labore et dolore magna elit
+                          </div>
+                          <div class="d-flex flex-wrap justify-content-start align-items-start mb-3">
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-heart mr-1"></i> 61 Likes</a
+                            >
+                            <a class="text-blue mr-3" href="javascript: void(0);"
+                              ><i class="fe fe-message-square mr-1"></i> 2 Comments</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="javascript: void(0);" class="btn btn-light text-primary d-block mb-3">
+              Load More
+            </a>
+          </div>
+          <div class="tab-pane fade" id="tab-messages-content" role="tabpanel" aria-labelledby="tab-messages-content">
+            <div class="height-300 d-flex flex-column justify-content-end">
+              <div class="fel__g14__contentWrapper fel__customScroll">
+                <div class="fel__g14__message">
+                  <div class="fel__g14__messageContent">
+                    <div class="text-gray-4 font-size-12 text-uppercase">You, 5 min ago</div>
+                    <div>
+                      Hi! Anyone here? I want to know how I can buy Fellowary?
+                    </div>
+                  </div>
+                  <div class="fel__g14__messageAvatar fel__utils__avatar">
+                    <img src="../overlay/core/img/avatars/avatar-2.png" alt="You" />
+                  </div>
+                </div>
+                <div class="fel__g14__message fel__g14__message--answer">
+                  <div class="fel__g14__messageContent">
+                    <div class="text-gray-4 font-size-12 text-uppercase">Mary, 14 sec ago</div>
+                    <div>
+                      Please call us + 100 295 000
+                    </div>
+                  </div>
+                  <div class="fel__g14__messageAvatar fel__utils__avatar">
+                    <img src="../overlay/core/img/avatars/2.jpg" alt="Mary Stanform" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-2 pb-2">
+              Mary is typing...
+            </div>
+            <div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Send message..." aria-label="Recipient's username"
+                  aria-describedby="button-addon2" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fe fe-send align-middle"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-settings-content" role="tabpanel" aria-labelledby="tab-settings-content">
+            <h5 class="text-black mt-4">
+              <strong>Personal Information</strong>
+            </h5>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="l0">Username</label>
+                  <input type="text" class="form-control" id="l0" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="l1">Email</label>
+                  <input type="email" class="form-control" id="l1" />
+                </div>
+              </div>
+            </div>
+            <h5 class="text-black mt-4">
+              <strong>Password</strong>
+            </h5>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="l3">Password</label>
+                  <input type="password" class="form-control" id="l3" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="l4">Password</label>
+                  <input type="password" class="form-control" id="l4" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <h5 class="text-black mt-4">
+                  <strong>Profile Avatar</strong>
+                </h5>
+                <div class="form-group">
+                  <label class="form-control-label" for="l6">File Upload</label>
+                  <input type="file" id="l6" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h5 class="text-black mt-4">
+                  <strong>Profile Background</strong>
+                </h5>
+                <div class="form-group">
+                  <label class="form-control-label" for="l5">File Upload</label>
+                  <input type="file" id="l5" />
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <div class="form-group">
+                <button type="button" class="btn width-200 btn-primary">Submit</button>
+                <button type="button" class="btn btn-default">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fel__messaging">
+  <div class="fel__messaging__sidebar mr-4">
+    <div class="position-relative mb-4">
+      <i class="fel__messaging__searchIcon fe fe-search"></i>
+      <input class="fel__messaging__searchInput" type="text" placeholder="Search users..." />
+    </div>
+    <div class="fel__customScroll fel__messaging__dialogItems">
+      <div class="fel__messaging__dialogItem d-flex flex-nowrap align-items-center">
+        <div class="fel__utils__avatar fel__utils__avatar--size46 mr-3 flex-shrink-0">
+          <img src="../overlay/core/img/avatars/3.jpg" alt="Mary Stanform" />
+        </div>
+        <div class="fel__messaging__dialogInfo flex-grow-1">
+          <div class="text-uppercase font-size-12 text-truncate">Administrator</div>
+          <div
+            class="fel__messaging__dialogName text-dark font-size-18 font-weight-bold text-truncate"
+          >
+            Hellen Maggie
+          </div>
+        </div>
+        <div class="fel__messaging__dialogBadge flex-shrink-0 align-self-start">
+          <div class="badge badge-success">9</div>
+        </div>
+      </div>
+      <div
+        class="fel__messaging__dialogItem fel__messaging__dialogItem--current d-flex flex-nowrap align-items-center"
+      >
+        <div class="fel__utils__avatar fel__utils__avatar--size46 mr-3 flex-shrink-0">
+          <img src="../overlay/core/img/avatars/1.jpg" alt="Mary Stanform" />
+        </div>
+        <div class="fel__messaging__dialogInfo flex-grow-1">
+          <div class="text-uppercase font-size-12 text-truncate">Moderator</div>
+          <div
+            class="fel__messaging__dialogName text-dark font-size-18 font-weight-bold text-truncate"
+          >
+            Dean Beckham
+          </div>
+        </div>
+        <div class="fel__messaging__dialogBadge flex-shrink-0 align-self-start">
+          <div class="badge badge-success">2</div>
+        </div>
+      </div>
+      <div class="fel__messaging__dialogItem d-flex flex-nowrap align-items-center">
+        <div class="fel__utils__avatar fel__utils__avatar--size46 mr-3 flex-shrink-0">
+          <img src="../overlay/core/img/avatars/4.jpg" alt="Mary Stanform" />
+        </div>
+        <div class="fel__messaging__dialogInfo flex-grow-1">
+          <div class="text-uppercase font-size-12 text-truncate">Agent</div>
+          <div
+            class="fel__messaging__dialogName text-dark font-size-18 font-weight-bold text-truncate"
+          >
+            Mike Stake
+          </div>
+        </div>
+        <div class="fel__messaging__dialogBadge flex-shrink-0 align-self-start"></div>
+      </div>
+      <div class="fel__messaging__dialogItem d-flex flex-nowrap align-items-center">
+        <div class="fel__utils__avatar fel__utils__avatar--size46 mr-3 flex-shrink-0">
+          <img src="../overlay/core/img/avatars/5.jpg" alt="Mary Stanform" />
+        </div>
+        <div class="fel__messaging__dialogInfo flex-grow-1">
+          <div class="text-uppercase font-size-12 text-truncate">Agent</div>
+          <div
+            class="fel__messaging__dialogName text-dark font-size-18 font-weight-bold text-truncate"
+          >
+            Janie Lawrence
+          </div>
+        </div>
+        <div class="fel__messaging__dialogBadge flex-shrink-0 align-self-start"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card flex-grow-1">
+    <div class="card-header card-header-flex flex-wrap">
+      <div class="d-flex flex-column justify-content-center mr-auto">
+        <h5 class="mb-0 mr-2 font-size-18">
+          Dean Beckham <span class="font-size-14 text-gray-6">(Moderator)</span>
+        </h5>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div>
+          <a
+            href="javascript: void(0);"
+            class="btn btn-sm btn-light mr-2"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Unlock Account"
+          >
+            <i class="fe fe-unlock"></i>
+          </a>
+          <a
+            href="javascript: void(0);"
+            class="btn btn-sm btn-light mr-2"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Mark as important"
+          >
+            <i class="fe fe-star"></i>
+          </a>
+          <a
+            href="javascript: void(0);"
+            class="btn btn-sm btn-light"
+            data-toggle="tooltip"
+            data-placement="top"
+            title=""
+            data-original-title="Delete user"
+          >
+            <i class="fe fe-trash"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="height-700 d-flex flex-column justify-content-end">
+        <div class="fel__g14__contentWrapper fel__customScroll">
+          <div class="fel__g14__message">
+            <div class="fel__g14__messageContent">
+              <div class="text-gray-4 font-size-12 text-uppercase">You, 5 min ago</div>
+              <div>
+                Hi! Anyone here? I want to know how I can access Fellowary?
+              </div>
+            </div>
+            <div class="fel__g14__messageAvatar fel__utils__avatar">
+              <img src="../overlay/core/img/avatars/avatar-2.png" alt="You" />
+            </div>
+          </div>
+          <div class="fel__g14__message fel__g14__message--answer">
+            <div class="fel__g14__messageContent">
+              <div class="text-gray-4 font-size-12 text-uppercase">Jeff, 14 sec ago</div>
+              <div>
+                Just log in.
+              </div>
+            </div>
+            <div class="fel__g14__messageAvatar fel__utils__avatar">
+              <img src="../overlay/core/img/avatars/2.jpg" alt="Mary Stanform" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-2 pb-2">
+        Jeff is typing...
+      </div>
+      <div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Send message..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fe fe-send align-middle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fel__mail">
+  <div class="fel__mail__sidebar mr-4">
+    <div class="position-relative mb-4">
+      <i class="fel__mail__searchIcon fe fe-search"></i>
+      <input class="fel__mail__searchInput" type="text" placeholder="Search mail..." />
+    </div>
+    <div class="fel__customScroll fel__mail__categories d-flex flex-column">
+      <a
+        href="javascript: void(0);"
+        class="fel__mail__category fel__mail__category--current text-dark font-size-18 font-weight-bold"
+      >
+        <span class="text-truncate">Inbox</span>
+        <span>(2)</span>
+      </a>
+      <a href="javascript: void(0);" class="fel__mail__category text-dark font-size-18">
+        <span class="text-truncate">Snoozed</span>
+      </a>
+      <a href="javascript: void(0);" class="fel__mail__category text-dark font-size-18">
+        <span class="text-truncate">Sent</span>
+      </a>
+      <a
+        href="javascript: void(0);"
+        class="fel__mail__category text-dark font-size-18 font-weight-bold"
+      >
+        <span class="text-truncate">Drafts</span>
+        <span>(1)</span>
+      </a>
+      <a href="javascript: void(0);" class="fel__mail__category text-dark font-size-18">
+        <span class="text-truncate">Span</span>
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header card-header-flex flex-wrap">
+      <div class="d-flex align-items-stretch mr-auto">
+        <ul
+          class="nav nav-tabs nav-tabs-line nav-tabs-line-bold nav-tabs-noborder nav-tabs-stretched"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
+              >Notifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript: void(0);" data-toggle="tab"
+              >Social <span class=" ml-2 badge badge-primary text-uppercase">4 new</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript: void(0);" data-toggle="tab">Promotions</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div class="mt-3 mb-3">
+          <a href="javascript: void(0);" class="btn btn-sm btn-light mr-2">
+            <i class="fe fe-unlock"></i>
+          </a>
+          <a href="javascript: void(0);" class="btn btn-sm btn-light mr-2">
+            <i class="fe fe-star"></i>
+          </a>
+          <a href="javascript: void(0);" class="btn btn-sm btn-light">
+            <i class="fe fe-trash"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover nowrap fel__mail__box">
+          <thead>
+            <tr>
+              <th class="no-sort width-10"></th>
+              <th class="no-sort width-10"></th>
+              <th class="width-150">From</th>
+              <th>Message</th>
+              <th class="no-sort width-10"></th>
+              <th class="no-sort width-50"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-warning"></i></td>
+              <td>GoDaddy</td>
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>2:54AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Hetzner</td>
+              <td>Ipsum is simply dummy text of the printing and typesetting</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>6:39AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>mail@google.com</td>
+              <td>Lorem Ipsum is simply dummy text of the printing</td>
+              <td></td>
+              <td>1:48AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Google.com</td>
+              <td>Is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>8:38AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-warning"></i></td>
+              <td>GoDaddy</td>
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>2:54AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Hetzner</td>
+              <td>Ipsum is simply dummy text of the printing and typesetting</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>6:39AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>mail@google.com</td>
+              <td>Lorem Ipsum is simply dummy text of the printing</td>
+              <td></td>
+              <td>1:48AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Google.com</td>
+              <td>Is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>8:38AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-warning"></i></td>
+              <td>GoDaddy</td>
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>2:54AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Hetzner</td>
+              <td>Ipsum is simply dummy text of the printing and typesetting</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>6:39AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>mail@google.com</td>
+              <td>Lorem Ipsum is simply dummy text of the printing</td>
+              <td></td>
+              <td>1:48AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Google.com</td>
+              <td>Is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>8:38AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-warning"></i></td>
+              <td>GoDaddy</td>
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>2:54AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Hetzner</td>
+              <td>Ipsum is simply dummy text of the printing and typesetting</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>6:39AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>mail@google.com</td>
+              <td>Lorem Ipsum is simply dummy text of the printing</td>
+              <td></td>
+              <td>1:48AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Google.com</td>
+              <td>Is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>8:38AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Google.com</td>
+              <td>Is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>8:38AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-warning"></i></td>
+              <td>GoDaddy</td>
+              <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>2:54AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>Hetzner</td>
+              <td>Ipsum is simply dummy text of the printing and typesetting</td>
+              <td><i class="fe fe-paperclip text-default"></i></td>
+              <td>6:39AM</td>
+            </tr>
+            <tr>
+              <td class="text-center"><input type="checkbox" /></td>
+              <td><i class="fe fe-star text-default"></i></td>
+              <td>mail@google.com</td>
+              <td>Lorem Ipsum is simply dummy text of the printing</td>
+              <td></td>
+              <td>1:48AM</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>From</th>
+              <th>Message</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--script>
+  /////////////////////////////////////////////////////////////////////////////////////////
+  // "MAIL APP" module scripts
+
+  ;(function($) {
+    'use strict'
+    $(function() {
+      /////////////////////////////////////////////////////////////////////////////////////////
+      $('.fel__mail__box').DataTable({
+        responsive: false,
+        order: [],
+        columnDefs: [
+          {
+            targets: 'no-sort',
+            orderable: false,
+          },
+        ],
+        lengthMenu: [[10, 20, 50, -1], [10, 20, 50, 'All']],
+      })
+      /////////////////////////////////////////////////////////////////////////////////////////
+    })
+  })(jQuery)
+</script-->
+        </div>
+      </div>
+      <div class="fel__layout__footer">
+        <div class="fel__footer">
+          <div class="fel__footer__inner">
+            <div class="row">
+              <div class="col-md-8">
+                <p>
+                  <strong>
+                    Fellowary - For you and yours.
+                  </strong>
+                </p>
+                <p>
+                  &copy; 2021 Fellowary
+                </p>
+              </div>
+              <div class="col-md-4">
+                <div class="fel__footer__logo">
+                  <img src="../overlay/core/img/fellowary-logo.png" alt="Fellowary" />
+                  <div class="fel__footer__logo__name">Fellowary</div>
+                  <div class="fel__footer__logo__descr">Fellowary</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="/js/files_client.js"></script>
+
+</body>
+
+</html>

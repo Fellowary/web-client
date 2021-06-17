@@ -1,0 +1,84 @@
+@import 'assets/styles/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  "LAYOUT" STYLES */
+
+.fel__layout {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  min-height: 100vh;
+  min-width: 0;
+
+  &.fel__layout--hasSider {
+    flex-direction: row;
+  }
+
+  &__content {
+    flex: auto;
+    min-height: 0;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+
+  &__header {
+    flex: 0 0 auto;
+    background: $white;
+  }
+
+  // squared borders
+  &__squaredBorders {
+    .card {
+      border-radius: 0 !important;
+    }
+  }
+
+  // app max-width
+  &__appMaxWidth {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+
+  // content no max-width
+  &__contentNoMaxWidth {
+    .fel__utils__content {
+      max-width: none;
+    }
+  }
+
+  // borderless cards
+  &__borderless {
+    .card {
+      border: none !important;
+    }
+  }
+
+  // gray background
+  &__grayBackground {
+    background: $gray-1 !important;
+  }
+
+  // card shadow
+  &__cardsShadow {
+    .card {
+      box-shadow: $shadow-4;
+      .card {
+        box-shadow: none;
+      }
+    }
+  }
+
+  // fixed header
+  &__fixedHeader {
+    position: sticky;
+    top: 0;
+    z-index: 998;
+  }
+
+  // gray header
+  &__headerGray {
+    background: $gray-1 !important;
+  }
+}

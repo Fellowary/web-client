@@ -1,0 +1,14 @@
+@import 'assets/styles/mixins.scss';
+
+.invite_button{
+	float: right;
+	background-color: $fel-pink;
+	color: white;
+	i{
+		padding-right: 5px;
+	}
+}
+
+.request_vouch_button {
+	background-color: $fel-blue-pale;
+}

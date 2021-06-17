@@ -1,0 +1,63 @@
+/* TOPBAR */
+.fel__topbar {
+    background: #fff;
+    min-height: 4.26rem;
+    border-bottom: 1px solid #e4e9f0;
+    padding: 1rem 1.33rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    flex-wrap: nowrap;
+}
+
+.fel__topbar__searchDropdown .dropdown-menu {
+    padding-top: 1.33rem;
+    padding-left: 1.33rem;
+    padding-right: 0.33rem;
+    padding-bottom: 1.33rem;
+    min-width: 22rem;
+}
+
+.fel__topbar__search {
+    -webkit-box-flex: 0;
+            flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.fel__topbar__search::after {
+    display: none;
+}
+
+.fel__topbar__searchContainer {
+    position: relative;
+}
+
+.fel__topbar__searchIcon {
+    position: absolute;
+    color: #c3bedc;
+    font-size: 1.13rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 1rem;
+}
+
+.fel__topbar__searchInput {
+    border: 1px solid #e4e9f0;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 3rem;
+    padding-right: 1.33rem;
+    padding-top: 0.33rem;
+    padding-bottom: 0.26rem;
+    width: 17.33rem;
+}
+
+.fel__topbar__status {
+    border-radius: 5px;
+    padding: 0.33rem 0.46rem;
+}

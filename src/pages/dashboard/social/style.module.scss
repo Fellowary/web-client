@@ -1,0 +1,199 @@
+@import 'assets/styles/mixins.scss';
+
+@keyframes vibrate {
+  0% {
+      top: 0px;
+  }
+  10% {
+    top: -3px;
+    left: -2px;
+  }
+  25% {
+    top: -5px;
+    left: 2px;
+  }
+  50% {
+    top: 0px;
+    left: -3px;
+  }
+  60% {
+    top: -2px;
+    left: 4px;
+  }
+  75% {
+    top: 5px;
+    left: -1px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.vibrate {
+  animation: vibrate .1 linear infinite;
+}
+
+.conversationInput {
+  padding-right: 5px;
+}
+
+.conversationInputVibrate {
+  padding-right: 5px;
+  position: relative;
+  border: 1px solid red;
+  animation: vibrate 0.2s linear 0s infinite;
+}
+
+.conversationIcon {
+  color: rgba(0, 0, 0, 0.25);
+  padding-left: 5px;
+}
+
+.conversationButton {
+  background-color: $primary;
+  color: $white;
+  &__hidden{
+    display: none;
+  }
+}
+
+.closeConversationButton {
+  float: left;
+  background-color: $danger;
+  color: $white;
+}
+
+.privateConversationButton {
+  background-color: $primary;
+  position: relative;
+  color: $white;
+    /*animation: vibrate 0.5s linear 0s 30;*/
+}
+
+.buttonVibrate {
+  position: relative;
+  animation: vibrate 0.2s linear 0s infinite;
+}
+
+.deleteButton:hover{
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
+}
+.publicConversationButton {
+  background-color: $info;
+  color: $white;
+}
+
+.overlayModal {
+  min-width:450px;
+}
+
+.dialogs {
+  height: 100%;
+
+  @media (max-width: $sm-max-width) {
+    max-height: rem(240);
+    margin-bottom: rem(15);
+  }
+}
+
+.item {
+  padding: rem(10);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: rem(15);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: lighten($gray-1, 2);
+  }
+}
+
+.current {
+  background-color: $gray-1;
+
+  &:hover {
+    background-color: $gray-1;
+  }
+}
+
+.info {
+  min-width: 0;
+}
+
+.unread {
+  min-width: 15px;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: rem(15);
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &.answer {
+    flex-direction: row-reverse;
+
+    .messageAvatar {
+      margin-left: 0;
+      margin-right: rem(15);
+    }
+
+    .messageContent {
+      &::before {
+        left: auto;
+        right: 100%;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 4px solid $gray-1;
+        border-left: none;
+      }
+    }
+  }
+}
+
+.messageAvatar {
+  flex-shrink: 0;
+  margin-left: rem(15);
+}
+
+.messageContent {
+  background-color: $gray-1;
+  position: relative;
+  border-radius: 5px;
+  padding-left: rem(15);
+  padding-right: rem(15);
+  padding-top: rem(6);
+  padding-bottom: rem(6);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 16px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 4px solid $gray-1;
+    border-right: none;
+  }
+}
+
+.messageCard{
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+.cardBody{
+  min-height: 100%;
+}

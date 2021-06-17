@@ -1,0 +1,26 @@
+@import 'assets/styles/mixins.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* ERRORS */
+
+.errors {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: rem(505);
+  width: 100%;
+}
+
+.footerNav {
+  li {
+    margin: rem(5) rem(14);
+  }
+}

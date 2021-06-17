@@ -1,0 +1,16 @@
+const actions = {
+  SET_STATE_ALL: 'all/SET_STATE',
+  SET_STATE: 'user/SET_STATE',
+  REGISTER: 'user/REGISTER',
+  SIGN_IN: 'user/SIGN_IN',
+  LOAD_CURRENT_ACCOUNT: 'user/LOAD_CURRENT_ACCOUNT',
+  LOAD_ALL: 'user/LOAD_ALL',
+  LOGOUT: 'user/LOGOUT',
+  ADD_INVITE: 'user/ADD_INVITE',
+  GET_INVITE: 'user/GET_INVITE',
+  ACCEPT_INVITE: 'user/ACCEPT_INVITE',
+  REJECT_INVITE: 'user/REJECT_INVITE',
+  SET_CURRENT_PAGE: 'user/SET_CURRENT_PAGE'
+}
+
+export default actions

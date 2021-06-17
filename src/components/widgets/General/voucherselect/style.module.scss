@@ -1,0 +1,21 @@
+@import 'assets/styles/mixins.scss';
+
+.horizontal {
+	height: 30vh;
+}
+
+.avatar {
+  background-color: $border;
+}
+
+.complete {
+	background-color: $fel-lime-paler;
+}
+
+.active{
+	background-color: $fel-blue-pale;
+}
+
+.spaced_icon{ 
+	padding-right: 5px;
+}

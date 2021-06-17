@@ -1,0 +1,64 @@
+@import 'assets/styles/mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  "CORE" STYLES */
+
+html {
+  font-size: 15px;
+  @media (max-width: $sm-max-width) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $base-font-family;
+  color: $text;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  @include transition-color();
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+input {
+  outline: none !important;
+  font-family: $base-font-family;
+  color: $text;
+}
+
+button,
+input {
+  box-shadow: none !important;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  appearance: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+
+svg {
+  vertical-align: initial;
+  overflow: auto;
+}
