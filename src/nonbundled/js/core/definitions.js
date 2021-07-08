@@ -1843,7 +1843,7 @@ class Conversation extends StoredObject{
       signature: messageTextSig
     };
 
-    // create the message object in our storge system
+    // create the message object in our storage system
     let outgoingMessage = new Message(
       undefined, // filePath
       this.conversationKey, // conversationFilePath
