@@ -67,7 +67,7 @@
     "lzutf8": "^0.6.0",
     "meow": "^10.0.1",
     "node-html-parser": "^3.3.5",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "node-seal": "^4.5.6",
     "npm-check": "^5.9.2",
     "nprogress": "^0.2.0",
